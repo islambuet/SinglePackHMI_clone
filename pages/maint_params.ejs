@@ -1,0 +1,357 @@
+<div class="row mt-2">
+    <div class="col-12 text-center">
+        <div class="px-1 py-2 border border-light" style="display: inline-block;border-width: 4px !important;">
+            <span class="mr-2 px-2" id="site_name">--</span>
+            <span class="mr-2 px-2 " id="machine_name">--</span>
+            <span>Install Date: <span id="install_date">--</span></span>
+        </div>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-12">
+        <button id="params_export_btn" class="btn btn-primary">Export</button>
+        <button id="params_import_btn" class="btn btn-danger">Import</button>
+        <input type="file"accept=".csv" class="form-control d-none" id="params_import_file">
+
+        <div style="display: inline-block;">
+            <img id="system_loading" style="display: none;" src="theme/images/loading.gif" alt="Loading">
+            <span id="file_name_container"></span>
+            <span id="alert_message"></span>
+        </div>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-lg-6">
+        <h3>Threshold Parameters</h3>
+        <div style="display: block; overflow-y: auto; height: 238px">
+            <table class="table table-sm table-bordered table-striped" id="table_parameters_threshold" style="">
+                <thead>
+                <tr>
+                    <th style="width: 115px;">Parameter ID</th>
+                    <th>Description</th>
+                    <th style="width: 54px;">Value</th>
+                    <th style="width: 72px;">Unit</th>
+                    <th style="width: 228px;"></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <h3>Timeout Parameters</h3>
+        <div style="display: block; overflow-y: auto; height: 370px">
+            <table class="table table-sm table-bordered table-striped" id="table_parameters_timeout" style="">
+                <thead>
+                <tr>
+                    <th style="width: 115px;">Parameter ID</th>
+                    <th>Description</th>
+                    <th style="width: 54px;">Value</th>
+                    <th style="width: 72px;">Unit</th>
+                    <th style="width: 228px;"></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <h3>Barcode</h3>
+        <div style="display: block;">
+            <table class="table table-sm table-bordered table-striped" id="table_parameters_barcode" style="">
+                <thead>
+                <tr>
+                    <th style="width: 115px;">Parameter ID</th>
+                    <th>Description</th>
+                    <th style="width: 54px;">Value</th>
+                    <th style="width: 72px;">Unit</th>
+                    <th style="width: 228px;"></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <h4>Calibration</h4>
+        <table class="table table-sm table-bordered table-striped" style="">
+            <thead>
+            <tr>
+                <th></th>
+                <th style="text-align: right;width:22%">Power Turn Entry Pe</th>
+                <th style="text-align: right;width:22%">Reject Pe</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Package 1</td>
+                <td data-counter-id="1" class="counter-value" style="text-align: right"></td>
+                <td data-counter-id="6" class="counter-value" style="text-align: right"></td>
+            </tr>
+            <tr>
+                <td>Package 2</td>
+                <td data-counter-id="2" class="counter-value" style="text-align: right"></td>
+                <td data-counter-id="7" class="counter-value" style="text-align: right"></td>
+            </tr>
+            <tr>
+                <td>Package 3</td>
+                <td data-counter-id="3" class="counter-value" style="text-align: right"></td>
+                <td data-counter-id="8" class="counter-value" style="text-align: right"></td>
+            </tr>
+            <tr>
+                <td>Package 4</td>
+                <td data-counter-id="4" class="counter-value" style="text-align: right"></td>
+                <td data-counter-id="9" class="counter-value" style="text-align: right"></td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered table-striped" style="table-layout: fixed">
+            <tbody>
+            <tr>
+                <td>Power Turn Tracking Window</td>
+                <td style="text-align: right;width:22%"><span class="param-value" data-param-id="60"></span><span class="param-unit" data-param-id="60"></span></td>
+                <td style="text-align: right;width:22%"><span  class="param-value" data-param-id="61"></span><span class="param-unit" data-param-id="61"></span></td>
+            </tr>
+            <tr>
+                <td>Reject Position</td>
+                <td style="text-align: right;width:22%"><span  class="param-value" data-param-id="62" ></span><span class="param-unit" data-param-id="62"></span></td>
+                <td>&nbsp;</td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="text-align: end;">
+            <button id="button_calibrate" class="button-device-command button-3d button-rectangle" style="display: none;" data-device-id="87" data-command="0" data-parameter1="0">Calibrate</button>
+        </div>
+        <h3>Singulator Parameters</h3>
+        <div style="display: block; overflow-y: auto; height: 370px">
+            <table class="table table-sm table-bordered table-striped" id="table_parameters_singulator" style="">
+                <thead>
+                <tr>
+                    <th style="width: 115px;">Parameter ID</th>
+                    <th>Description</th>
+                    <th style="width: 54px;">Value</th>
+                    <th style="width: 72px;">Unit</th>
+                    <th style="width: 228px;"></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+
+<footer id="footer" class="container-fluid">
+    <%- include('../components/maint_footer') %>
+</footer>
+<script>
+    /* global basic_info */
+    /* global ipcRenderer */
+
+    function systemPageLoaded(){
+        if(basic_info['machines'][basic_info['selectedMachineId']]){
+            let machine=basic_info['machines'][basic_info['selectedMachineId']];
+            $('#site_name').text(machine['site_name']);
+            $('#machine_name').text(machine['machine_name']);
+            $('#install_date').text(moment(machine['install_at']).format('MMM D Y, H:mm:ss'))
+        }
+        if(basic_info['currentUser']['role']==1){
+            $("#button_calibrate").show();
+        }
+        Object.values(basic_info['parameters']).forEach(item => {
+            let html='<tr>' +
+                '<td style="text-align: center">' + item['param_id'] + '</td>' +
+                '<td>' + item['description'] + '</td>' +
+                '<td class="param-value" style="text-align: right" data-param-id="'+item['param_id']+'">' + item['value'] + '</td>' +
+                '<td>' + item['unit'] + '</td>' +
+                '<td>'+
+                ((basic_info['currentUser']['role'] == 1 || basic_info['currentUser']['role'] == 2) ?
+                        '<div class="input-group">' +
+                        '<input class="param_command_value form-control integer_positive"  data-param-id="'+item['param_id']+'" type="text" >' +
+                        '<div class="input-group-append">' +
+                        '<button data-param-id="'+item['param_id']+'" class="param_command_button btn btn-primary btn-sm">change</button>' +
+                        '</div>' +
+                        '</div>':''
+                )+
+                '</td>' +
+                '</tr>';
+
+            if (item['param_id'] > 0 && item['param_id'] < 20) {
+                $('#table_parameters_threshold tbody').append(html)
+            }
+            else if (item['param_id'] >19 && item['param_id'] < 50) {
+                $('#table_parameters_timeout tbody').append(html)
+            }
+            else if (item['param_id'] ==50) {
+                $('#table_parameters_barcode tbody').append(html)
+            }
+            else if (item['param_id'] >99 && item['param_id'] < 110) {
+                $('#table_parameters_singulator tbody').append(html)
+            }
+            $('.param-unit[data-param-id="'+item['param_id']+'"]').text(item['unit'])//for fixed type params
+
+        });
+        if(basic_info['connected']){
+            requestPageData();
+            setInterval(() => {requestPageData()}, 2000);
+        }
+    }
+    function requestPageData(){
+        let requestData=[
+            {'name':'parameters_values','params':{}},
+            {'name':'counters_current_value','params':{}},
+        ];
+        ipcRenderer.send("sendRequestToServer", "getMaintParamsData",{},requestData);
+    }
+    $(document).on('click','.param_command_button',function (event){
+        let param_id=$(this).attr('data-param-id')
+        let value=parseInt($('.param_command_value[data-param-id="'+param_id+'"]').val());//not verifying number
+        if(value>-1){
+            let params={
+                'message_id':115,
+                'param_id':param_id,
+                'value':value
+            };
+            ipcRenderer.send("sendRequestToServer", "forwardSMMessage",params,[]);
+        }
+        else {
+            console.log("invalid number")
+        }
+    })
+    ipcRenderer.on("getMaintParamsData", function(e, jsonObject) {
+
+        let machine_id=jsonObject['params']['machine_id'];
+        for(let key in jsonObject['data']['parameters_values']){
+            let parameter_info=jsonObject['data']['parameters_values'][key];
+            $('.param-value[data-param-id="'+parameter_info['param_id']+'"]').text(parameter_info['value'])
+        }
+        let counterData=jsonObject['data']['counters_current_value'];
+        $('.counter-value').each((index, elem) => {
+            let counter_id=$(elem).attr('data-counter-id');
+            if(counterData[machine_id+'_'+counter_id]!=undefined){
+                $(elem).text(counterData[machine_id+'_'+counter_id])
+            }
+        })
+
+    })
+    $(document).on('click','#params_export_btn',function (event){
+        let requestData=[
+            {'name':'parameters_values','params':{}},
+        ];
+        ipcRenderer.send("sendRequestToServer", "getParamsValue",{},requestData);
+    })
+    ipcRenderer.on("getParamsValue", function(e, jsonObject) {
+        console.log(jsonObject['data']['parameters_values'])
+        let machine_id=jsonObject['params']['machine_id'];
+        let csvStr='';
+        let parameters = Object.values(basic_info['parameters']).sort((a, b) => a['param_id'] - b['param_id']);
+        for(let key in parameters){
+            let record=parameters[key];
+            csvStr=csvStr+'"'+record['machine_id']+'";';
+            csvStr=csvStr+'"'+record['param_id']+'";';
+            csvStr=csvStr+'"'+record['description']+'";';
+            csvStr=csvStr+'"'+jsonObject['data']['parameters_values'][record['machine_id']+'_'+record['param_id']]['value']+'";';
+            csvStr=csvStr+'"'+record['unit']+'";';
+            csvStr=csvStr+'"'+record['value_min']+'";';
+            csvStr=csvStr+'"'+record['value_max']+'"\n';
+        }
+        let hiddenElement = document.createElement('a');
+        hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csvStr);
+        hiddenElement.target = '_blank';
+        hiddenElement.download = 'parameters.csv';
+        hiddenElement.click();
+    })
+    $(document).on('click','#params_import_btn',function (event){
+        $('#params_import_file').val('');
+        $('#system_loading').hide();
+        $('#file_name_container').html('');
+        $('#alert_message').html('');
+        $('#params_import_file').trigger('click');
+    })
+    $("#params_import_file").on("change", function() {
+
+        let fileName = $(this).val().split("\\").pop();
+        if(fileName){
+            $('#file_name_container').html("<span class='ml-1'> FileName: "+fileName+"</span>")
+            $('#system_loading').show()
+            $('#alert_message').html()
+            let file=this.files[0];
+            if(file.size>10000){
+                $('#alert_message').html("<span class='text-danger'> Invalid FileSize: "+file.size+"</span>")
+                $('#system_loading').hide()
+            }
+            else{
+                let parameters = basic_info['parameters'];
+                const reader = new FileReader()
+                reader.onload = function (e) {
+                    const text = e.target.result;
+                    let csvData=[];
+                    let rows=text.split(/\r\n|\n/);
+                    let errorStr='';
+                    for(let key in rows)
+                    {
+                        let row=rows[key];
+                        if(!row)continue;
+                        let cols=row.split(";")
+                        if(cols.length!=7){
+                            errorStr="<span class='text-danger'>Invalid ColLength. line: "+key+" length: "+cols.length+"</span>"
+                            break;
+                        }
+                        let machine_id=parseInt(cols[0].slice(1, -1));
+                        let param_id=parseInt(cols[1].slice(1, -1));
+                        let value=parseInt(cols[3].slice(1, -1));
+                        if(parameters[machine_id+'_'+param_id]){
+                            let parameter=parameters[machine_id+'_'+param_id];
+                            if(value<parameter['value_min']){
+                                errorStr="<span class='text-danger'>Value is lower than min value. line: "+key+" value_min: "+parameter['value_min']+" value: "+value+"</span>"
+                                break;
+                            }
+                            if(value>parameter['value_max']){
+                                errorStr="<span class='text-danger'>Value is higher than max value. line: "+key+" value_max: "+parameter['value_max']+" value: "+value+"</span>"
+                                break;
+                            }
+                            csvData.push({'machine_id':machine_id,'param_id':param_id,'value':value})
+                        }
+                        else{
+                            errorStr="<span class='text-danger'>Invalid Parameter. line: "+key+"</span>"
+                            break;
+                        }
+                    }
+                    if(errorStr){
+                        $('#alert_message').html(errorStr);
+                        $('#system_loading').hide()
+                    }
+                    else{
+                        if(csvData.length<1){
+                            $('#alert_message').html("<span class='text-danger'>Data Not Found</span>")
+                            $('#system_loading').hide()
+                        }
+                        else{
+                            let requestData=[
+                                {'name':'parameters_values_import','params':{'csvData':csvData}},
+                            ];
+                            ipcRenderer.send("sendRequestToServer", "ImportParametersValue",{},requestData);
+                        }
+                    }
+                };
+                reader.readAsText(file)
+            }
+
+        }
+    });
+    ipcRenderer.on("ImportParametersValue", function(e, jsonObject) {
+        let totalRowChanged=jsonObject['data']['parameters_values_import']['totalRowChanged'];
+        if(totalRowChanged>-1){
+            if(totalRowChanged>0){
+                $('#alert_message').html("<span class='text-success'>"+totalRowChanged+" Parameters value updated.</span>")
+            }
+            else{
+                $('#alert_message').html("<span class='text-success'>No Change value found.</span>")
+            }
+
+        }
+        else{
+            $('#alert_message').html("<span class='text-danger'>Params Upload Failed</span>")
+        }
+
+        $('#system_loading').hide()
+    })
+
+</script>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg_general" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1624 1125">
+  <defs>
+    <style>
+      .conveyor-fill{
+      fill:#e6e7e8;
+      }
+      .photoeye-fill{
+      fill:#CCC;
+      }
+      .bin-fill{
+      fill: #e6e7e8;
+      }
+      .conveyor, .conveyor-bg, .bin, .photoeye{
+
+      }
+      .conveyor .status{
+      fill: transparent;
+      stroke-width:2;
+      stroke:#ccc;
+      }
+      .cursor-pointer {
+      cursor:pointer;
+      }
+    </style>
+    <g id="photoeye">
+      <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6" style="fill: rgb(57, 181, 74);"></polygon>
+      <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
+      <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
+      <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
+      <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
+      <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
+      <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12" style="fill: rgb(57, 181, 74);"></rect>
+    </g>
+  </defs>
+  <image href="components/general/asd.png"/>
+  <use xlink:href="#photoeye" transform="translate(34 201)" class="photoeye" gui-input-id="1" input-id="1" data-toggle="tooltip" data-html="true" title="Shaiful" />
+  <use xlink:href="#photoeye" transform="translate(34 232)" class="photoeye" gui-input-id="2" input-id="2" data-toggle="tooltip" data-html="true" title="Sunan" />
+  <use xlink:href="#photoeye" transform="translate(34 263)" class="photoeye" gui-input-id="3" input-id="3" data-toggle="tooltip" data-html="true" title="Soriful" />
+  <use xlink:href="#photoeye" transform="translate(34 294)" class="photoeye" gui-input-id="4" input-id="4" data-toggle="tooltip" data-html="true" title="" />
+
+  <g transform="translate(237,584)" class="conveyor" gui-conveyor-id="4" conveyor-id="7" data-toggle="tooltip" data-html="true" title="">
+    <polygon points="0,0 0,45 254,45 254,10 34,10" class="status" />
+  </g>
+  <g transform="translate(237,479)" class="conveyor" gui-conveyor-id="3" conveyor-id="8" data-toggle="tooltip" data-html="true" title="">
+    <polygon points="0,0 0,45 254,45 254,10 34,10" class="status" />
+  </g>
+
+  <g transform="translate(200,638)" class="conveyor" gui-conveyor-id="2" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="100" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(200,581)" class="conveyor" gui-conveyor-id="2" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="50" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(200,534)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="40" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(200,479)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="50" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(200,430)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="40" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(200,227)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="196" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(200,180)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="40" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(237,172) scale(-1,-1)" class="conveyor" gui-conveyor-id="10" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
+    <path class="status" d="M67.23,29.05v38.18C30.1,67.23,0,37.13,0,0H38.18c0,16.04,13,29.05,29.05,29.05Z"></path>
+  </g>
+  <g transform="translate(120,105)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="40" height="34" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(45,172) scale(1,-1)" class="conveyor" gui-conveyor-id="10" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
+    <path class="status" d="M67.23,29.05v38.18C30.1,67.23,0,37.13,0,0H38.18c0,16.04,13,29.05,29.05,29.05Z"></path>
+  </g>
+  <g transform="translate(47,180)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="24" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(47,211)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="24" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(47,242)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="24" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(47,273)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="24" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(47,304)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="60" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(36,371)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="56" height="163" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(47,541)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="60" rx="4" ry="4" class="status"/>
+  </g>
+
+  <g transform="translate(47,608)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="34" height="184" rx="4" ry="4" class="status"/>
+  </g>
+
+</svg>
