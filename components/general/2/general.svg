@@ -60,8 +60,8 @@
   <g transform="translate(684,220)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="47" height="35" rx="4" ry="4" class="status"/>
   </g>
-  <g transform="translate(736,170)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="137" rx="4" ry="4" class="status"/>
+  <g transform="translate(736,220)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="47" height="35" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(788,220)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="46" height="35" rx="4" ry="4" class="status"/>
@@ -95,10 +95,16 @@
     <rect width="52" height="105" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(503,130)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(503,178)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(586,130)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(586,170)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(633,130)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="46" height="35" rx="4" ry="4" class="status"/>
@@ -109,20 +115,32 @@
   <g transform="translate(736,130)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="47" height="35" rx="4" ry="4" class="status"/>
   </g>
+  <g transform="translate(736,170)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="47" height="43" rx="4" ry="4" class="status"/>
+  </g>
   <g transform="translate(788,130)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="47" height="35" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(840,130)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(840,170)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(920,130)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(920,178)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(915,20)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="52" height="105" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(1244,130)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(1244,178)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(1244,20)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="42" height="105" rx="4" ry="4" class="status"/>
@@ -130,16 +148,25 @@
 
 
   <g transform="translate(558,264)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(558,304)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(553,352)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="52" height="105" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(637,264)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(637,312)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(684,312)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="47" height="35" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(736,264)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="47" height="43" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(736,312)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="47" height="35" rx="4" ry="4" class="status"/>
@@ -151,16 +178,25 @@
     <rect width="47" height="35" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(892,264)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(892,312)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(972,264)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(972,304)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(967,352)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="52" height="105" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(1295,264)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="83" rx="4" ry="4" class="status"/>
+    <rect width="42" height="35" rx="4" ry="4" class="status"/>
+  </g>
+  <g transform="translate(1295,304)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
+    <rect width="42" height="43" rx="4" ry="4" class="status"/>
   </g>
   <g transform="translate(1295,352)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
     <rect width="42" height="105" rx="4" ry="4" class="status"/>
