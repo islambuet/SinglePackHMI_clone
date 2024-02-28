@@ -204,7 +204,7 @@
 
 
 
-  <g transform="translate(100 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+  <g transform="translate(104 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
     <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
     <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
     <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
@@ -213,7 +213,7 @@
     <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
     <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
   </g>
-  <g transform="translate(160 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+  <g transform="translate(167 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
     <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
     <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
     <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
@@ -223,11 +223,351 @@
     <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
   </g>
 
-  <g transform="translate(80 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+  <g transform="translate(229 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(291 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(343 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(394 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(499 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(561 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(613 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(664 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(716 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(768 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(819 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(870 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(922 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(984 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(1089 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(1131 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(1236 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(1311 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(1430 270) rotate(-90)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(493 110)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(493 158)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(493 200)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+
+
+  <g transform="translate(548 269)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(548 314)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+  <g transform="translate(548 362)" class="photoeye" gui-input-id="14" input-id="0" data-toggle="tooltip" data-html="true" title="Photoeye">
+    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
+    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
+    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
+  </g>
+
+
+
+
+  <g transform="translate(84 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
     <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
     <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
   </g>
-  <g transform="translate(80 200)" class="device" gui-device-id="23" device-id="0" data-toggle="tooltip" data-html="true" title="Device">
+  <g transform="translate(147 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(209 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(271 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(323 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(374 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(479 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(541 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(593 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(644 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(696 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(748 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(799 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(850 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(902 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(964 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(1069 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(1111 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(1216 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(1291 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(1410 230)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+
+  <g transform="translate(513 90)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(513 138)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(513 180)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+
+
+  <g transform="translate(568 279)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(568 324)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+  <g transform="translate(568 372)" class="motor cursor-pointer" gui-motor-id="1" motor-id="0" data-toggle="tooltip" data-html="true" title="motor">
+    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
+    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
+  </g>
+
+
+  <g transform="translate(147 200)" class="device" gui-device-id="23" device-id="0" data-toggle="tooltip" data-html="true" title="Device">
     <rect class="status" x="0" y="0" width="19.914" height="9.863" style="fill:#e6e6e6"/>
     <path d="M0,0v10h20v-10h-20Zm.686,9.318v-8.636h17.94l-17.393,8.636h-.547Z"/>
   </g>
