@@ -1,8 +1,11 @@
+<div class="row mb-3">
+    <div class="col-12">
+        <%- include('../components/general/general_header.ejs') %>
+    </div>
+</div>
 <div class="row">
-    <div class="col-12" style="">
-<!--        <img class="position-absolute" style="left: 0;top:0;" src="<%= './components/general/'+system_general_layout_no+'/bg.png' %>">-->
+    <div class="col-12">
         <%- include('../components/general/'+system_general_layout_no+'/general.svg') %>
-        <%- include('../components/general/'+system_general_layout_no+'/common_html.ejs') %>
     </div>
 </div>
 <div class="row m-0">
@@ -20,7 +23,12 @@
     function systemPageLoaded(){
         if(basic_info['connected']){
             $('[data-toggle="tooltip"]').tooltip();
+            setConveyorsLabel();//general_functions
+            setPhotoeyesLabel();//general_functions
+            setDevicesLabel();//general_functions
             $('.photoeye .status').css('fill','#f7931e');
+            //$('.conveyor .status').css('stroke','#28ad3f');
+
         }
     }
 </script>

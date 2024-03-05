@@ -5,10 +5,56 @@
 /* global basic_info */
 /* global ipcRenderer */
 
-$(document).on('click','#btn_legend',function (event){
+
+
+function setConveyorsLabel(){
+    let conveyors=basic_info['conveyors'];
+    if(conveyors!=undefined){
+        Object.values(conveyors).forEach(record => {
+            if(record['gui_id']>0){
+                $('.conveyor[gui-id='+record['gui_id']+']').attr('conveyor-id',record['conveyor_id']).attr('data-original-title',record['conveyor_name']).show();
+            }
+        })
+    }
+}
+function setPhotoeyesLabel(){
+    let inputs=basic_info['inputs']
+    if(inputs!=undefined){
+        Object.values(inputs).forEach(record => {
+            if(record['gui_id']>0 && (record['input_type']==0)&& (record['device_type']==0)&& (record['device_number']==0) ){
+                $('.photoeye[gui-id='+record['gui_id']+']').attr('input-id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
+            }
+        })
+    }
+}
+function setDevicesLabel(){
+    let devices=basic_info['devices'];
+    for(let key in devices){
+        let device=devices[key];
+        if(device['gui_id']>0 ){
+            $('.device[gui-id='+device["gui_id"]+']').attr('device-id',device["device_id"]).attr('data-original-title',device['device_name']+'<br>'+device['ip_address']).show();
+        }
+    }
+}
+
+
+$(document).on('click','#btn_toggle_conveyors',function (event){
+    $('.conveyor').not('[conveyor-id=0]').toggle();
+})
+$(document).on('click','#btn_toggle_devices',function (event){
+    $('.device').not('[device-id=0]').toggle();
+})
+$(document).on('click','#btn_toggle_photoeyes',function (event){
+    $('.photoeye').not('[input-id=0]').toggle();
+})
+$(document).on('click','#btn_toggle_motors',function (event){
+    $('.motor').not('[motor-id=0]').toggle();
+})
+$(document).on('click','#btn_toggle_legend',function (event){
     //window.open('components/general/general_colors.svg', '_blank', 'top=0,left=0')
     ipcRenderer.send("sendRequestToIpcMain", "showChildWindow",{'name':'legend'});
 })
+
 $('#switch_legend_production').change(function () {
     if ($(this).is(":checked")) {
         $('#svg_general_colors').hide();
@@ -87,26 +133,7 @@ function setBinsLabel(){
 
     }
 }
-function setConveyorsLabel(){
-    let conveyors=basic_info['conveyors'];
-    if(conveyors!=undefined){
-        Object.values(conveyors).forEach(record => {
-            if(record['gui_id']>0){
-                $('.conveyor[gui-conveyor-id='+record['gui_id']+']').attr('conveyor-id',record['conveyor_id']).attr('data-original-title',record['conveyor_name']).show();
-                $('.conveyor-bg[gui-conveyor-id='+record['gui_id']+']').show();
-            }
-        })
-    }
-}
-function setDevicesLabel(){
-    let devices=basic_info['devices'];
-    for(let key in devices){
-        let device=devices[key];
-        if(device['gui_id']>0 ){
-            $('.device[gui-device-id='+device["gui_id"]+']').attr('device-id',device["device_id"]).attr('data-original-title',device['device_name']+'<br>'+device['ip_address']).show();
-        }
-    }
-}
+
 function setEstopsLabel(){
     let inputs=basic_info['inputs']
     for(let key in inputs){
@@ -116,16 +143,7 @@ function setEstopsLabel(){
         }
     }
 }
-function setPhotoeyesLabel(){
-    let inputs=basic_info['inputs']
-    if(inputs!=undefined){
-        Object.values(inputs).forEach(record => {
-            if(record['gui_id']>0 && (record['input_type']==0)&& (record['device_type']==0)&& (record['device_number']==0) ){
-                $('.photoeye[gui-input-id='+record['gui_id']+']').attr('input-id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
-            }
-        })
-    }
-}
+
 function setTestButtonsStatus(outputStates){
     let machine_id=basic_info['selectedMachineId'];
     if(outputStates[machine_id+"_49"] && outputStates[machine_id+"_49"]['state']==1){
