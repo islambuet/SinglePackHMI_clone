@@ -26,9 +26,23 @@
             setConveyorsLabel();//general_functions
             setPhotoeyesLabel();//general_functions
             setDevicesLabel();//general_functions
-            $('.photoeye .status').css('fill','#f7931e');
-            //$('.conveyor .status').css('stroke','#28ad3f');
+            setMotorsLabel();//general_functions
+            requestPageData();
+            setInterval(() => {requestPageData()}, 1000);
 
         }
     }
+    function requestPageData(){
+        let requestData=[
+            {'name':'inputs_states','params':{}},
+            {'name':'conveyors_states','params':{}},
+            {'name':'devices_states','params':{}},
+        ];
+        ipcRenderer.send("sendRequestToServer", "getGeneralViewData",{},requestData);
+    }
+    ipcRenderer.on("getGeneralViewData", function(e, jsonObject) {
+        setConveyorsStates(jsonObject['data']['conveyors_states']);//general_functions
+        setPhotoeyesStates(jsonObject['data']['inputs_states']);//general_functions
+        setDevicesStates(jsonObject['data']['devices_states']);//general_functions
+    })
 </script>

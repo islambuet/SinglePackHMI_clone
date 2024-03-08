@@ -2,572 +2,173 @@
 <svg id="svg_general" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1456 461">
   <defs>
     <style>
-      .photoeye-fill{
-      fill:#CCC;
-      }
-      .bin-fill{
-      fill: #e6e7e8;
-      }
-      .conveyor, .bin, .photoeye, .motor, .device {
-        display:none;
-      }
-      .conveyor .status{
+      .conveyor{
         fill: transparent;
         stroke-width:2;
         stroke:#e6e7e8;
+        rx:4;
+        ry:4;
+      }
+      .photoeye{
+        fill:#CCC;
+      }
+      .device, .motor{
+        fill:#e6e6e6;
+      }
+      .conveyor, .photoeye, .device , .motor {
+        display:none;
       }
       .cursor-pointer {
-      cursor:pointer;
+        cursor:pointer;
       }
     </style>
+    <g id="photoeye">
+      <polygon points="12 6 0 0 0 12 12 6"></polygon>
+      <rect x="14" y="5" width="3.2" height="3.2"></rect>
+      <rect x="22" y="5" width="3.2" height="3.2"></rect>
+      <rect x="30" y="5" width="3.2" height="3.2"></rect>
+      <rect x="38" y="5" width="3.2" height="3.2"></rect>
+      <rect x="46" y="5" width="3.2" height="3.2"></rect>
+      <rect x="54" y="0" width="3.6" height="12"></rect>
+    </g>
+    <g id="device">
+      <rect x="0" y="0" width="19.914" height="9.863"/>
+      <path d="M0,0v10h20v-10h-20Zm.686,9.318v-8.636h17.94l-17.393,8.636h-.547Z"  style="fill:black"/>
+    </g>
+    <g id="motor">
+      <circle cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" />
+      <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z" style="fill:black"/>
+    </g>
   </defs>
   <image href="components/general/<%= system_general_layout_no %>/bg.png"/>
 
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="72" height="35" transform="translate(30,205)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="60" height="35" transform="translate(108,205)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="35" transform="translate(174,205)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="35" transform="translate(237,205)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(300,205)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(353,205)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="99" height="35" transform="translate(405,205)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="59" height="35" transform="translate(510,205)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(575,205)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(628,205)" gui-id="10" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(681,205)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(733,205)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(785,205)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(838,205)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(890,205)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="35" transform="translate(942,205)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="100" height="35" transform="translate(1005,205)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="39" height="35" transform="translate(1111,205)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="100" height="35" transform="translate(1156,205)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="70" height="35" transform="translate(1262,205)" gui-id="10" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="100" height="35" transform="translate(1338,205)" gui-id="1" />
 
-  <g transform="translate(30,205)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="72" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(108,205)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="60" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(174,205)" class="conveyor" gui-id="3" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="57" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(237,205)" class="conveyor" gui-id="4" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="57" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(300,205)" class="conveyor" gui-id="5" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(353,205)" class="conveyor" gui-id="6" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="46" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(405,205)" class="conveyor" gui-id="7" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="99" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(510,205)" class="conveyor" gui-id="8" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="59" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(575,205)" class="conveyor" gui-id="9" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(628,205)" class="conveyor" gui-id="10" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="46" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(681,205)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="46" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(733,205)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="46" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(785,205)" class="conveyor" gui-id="3" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(838,205)" class="conveyor" gui-id="4" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="46" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(890,205)" class="conveyor" gui-id="5" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="46" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(942,205)" class="conveyor" gui-id="6" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="57" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1005,205)" class="conveyor" gui-id="7" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="100" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1111,205)" class="conveyor" gui-id="8" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="39" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1156,205)" class="conveyor" gui-id="9" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="100" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1262,205)" class="conveyor" gui-id="10" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="70" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1338,205)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="100" height="35" rx="4" ry="4" class="status"/>
-  </g>
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(497,0)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="36" transform="translate(497,120)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(497,162)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="40" height="35" transform="translate(580,110)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="40" height="35" transform="translate(580,151)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(626,110)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="50" height="35" transform="translate(678,110)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(733,110)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="43" transform="translate(733,150)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(786,110)" gui-id="10" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(840,110)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(840,150)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(920,0)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="36" transform="translate(920,120)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(920,162)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(1248,0)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="36" transform="translate(1248,120)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(1248,162)" gui-id="8" />
 
-  <g transform="translate(497,0)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="114" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(497,120)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="36" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(497,162)" class="conveyor" gui-id="3" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(580,110)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="40" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(580,151)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="40" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(626,110)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="46" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(678,110)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="50" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(733,110)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(733,150)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="43" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(786,110)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(840,110)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(840,150)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(920,0)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="114" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(920,120)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="36" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(920,162)" class="conveyor" gui-id="3" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1248,0)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="114" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1248,120)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="36" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1248,162)" class="conveyor" gui-id="3" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="36" transform="translate(550,248)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(550,290)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(550,331)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(635,254)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="40" height="35" transform="translate(635,295)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(681,295)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="43" transform="translate(733,246)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(733,295)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(786,295)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(839,295)" gui-id="10" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="43" transform="translate(892,246)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(892,295)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(974,248)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(974,290)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(974,331)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(1302,248)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(1302,290)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(1302,331)" gui-id="8" />
 
 
-  <g transform="translate(550,248)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="36" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(550,290)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(550,331)" class="conveyor" gui-id="3" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="114" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(635,254)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(635,295)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="40" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(681,295)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(733,246)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="43" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(733,295)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(786,295)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(839,295)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="47" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(892,246)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="43" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(892,295)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(974,248)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(974,290)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(974,331)" class="conveyor" gui-id="3" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="114" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1302,248)" class="conveyor" gui-id="1" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1302,290)" class="conveyor" gui-id="2" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="35" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(1302,331)" class="conveyor" gui-id="3" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect width="42" height="114" rx="4" ry="4" class="status"/>
-  </g>
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(85 250) rotate(-90)"  gui-id="1" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(151 250) rotate(-90)"  gui-id="2" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(214 250) rotate(-90)"  gui-id="3" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(277 250) rotate(-90)"  gui-id="4" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(330 250) rotate(-90)"  gui-id="5" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(382 250) rotate(-90)"  gui-id="6" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(487 250) rotate(-90)"  gui-id="7" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(552 250) rotate(-90)"  gui-id="8" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(605 250) rotate(-90)"  gui-id="9" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(658 250) rotate(-90)"  gui-id="10" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(710 250) rotate(-90)"  gui-id="1" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(762 250) rotate(-90)"  gui-id="2" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(815 250) rotate(-90)"  gui-id="3" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(867 250) rotate(-90)"  gui-id="4" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(919 250) rotate(-90)"  gui-id="5" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(982 250) rotate(-90)"  gui-id="6" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1088 250) rotate(-90)"  gui-id="7" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1133 250) rotate(-90)"  gui-id="8" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1239 250) rotate(-90)"  gui-id="9" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315 250) rotate(-90)"  gui-id="10" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1420 250) rotate(-90)"  gui-id="2" />
+
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(487 6)"  gui-id="1" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(487 126)"  gui-id="2" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(487 168)"  gui-id="3" />
+
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(542 267)"  gui-id="1" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(542 307)"  gui-id="2" />
+  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(542 425)"  gui-id="3" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(68 215)"  gui-id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(134 215)"  gui-id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(197 215)"  gui-id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(260 215)"  gui-id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(313 215)"  gui-id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(365 215)"  gui-id="6" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(470 215)"  gui-id="7" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(535 215)"  gui-id="8" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(588 215)"  gui-id="9" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(641 215)"  gui-id="10" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(693 215)"  gui-id="11" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745 215)"  gui-id="12" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(798 215)"  gui-id="13" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(850 215)"  gui-id="14" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(902 215)"  gui-id="15" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(965 215)"  gui-id="16" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1071 215)"  gui-id="17" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1116 215)"  gui-id="18" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1222 215)"  gui-id="19" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1298 215)"  gui-id="20" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1403 215)"  gui-id="21" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(510 18)"  gui-id="22" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(510 138)"  gui-id="23" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(510 180)"  gui-id="1" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(565 250)"  gui-id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(565 290)"  gui-id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(565 408)"  gui-id="4" />
 
 
 
-  <g transform="translate(85 250) rotate(-90)" class="photoeye" gui-id="1" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(151 250) rotate(-90)" class="photoeye" gui-id="2" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-
-  <g transform="translate(214 250) rotate(-90)" class="photoeye" gui-id="3" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(277 250) rotate(-90)" class="photoeye" gui-id="4" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(330 250) rotate(-90)" class="photoeye" gui-id="5" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(382 250) rotate(-90)" class="photoeye" gui-id="6" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(487 250) rotate(-90)" class="photoeye" gui-id="7" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(552 250) rotate(-90)" class="photoeye" gui-id="8" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(605 250) rotate(-90)" class="photoeye" gui-id="9" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(658 250) rotate(-90)" class="photoeye" gui-id="1" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(710 250) rotate(-90)" class="photoeye" gui-id="2" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(762 250) rotate(-90)" class="photoeye" gui-id="3" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(815 250) rotate(-90)" class="photoeye" gui-id="4" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(867 250) rotate(-90)" class="photoeye" gui-id="5" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(919 250) rotate(-90)" class="photoeye" gui-id="6" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(982 250) rotate(-90)" class="photoeye" gui-id="7" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(1088 250) rotate(-90)" class="photoeye" gui-id="8" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(1133 250) rotate(-90)" class="photoeye" gui-id="9" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(1239 250) rotate(-90)" class="photoeye" gui-id="1" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(1315 250) rotate(-90)" class="photoeye" gui-id="2" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(1420 250) rotate(-90)" class="photoeye" gui-id="3" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-
-  <g transform="translate(487 6)" class="photoeye" gui-id="1" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(487 126)" class="photoeye" gui-id="2" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(487 168)" class="photoeye" gui-id="3" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-
-
-
-  <g transform="translate(542 267)" class="photoeye" gui-id="1" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(542 307)" class="photoeye" gui-id="2" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-  <g transform="translate(542 425)" class="photoeye" gui-id="3" input-id="0" data-toggle="tooltip" data-html="true" title="">
-    <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6"></polygon>
-    <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2"></rect>
-    <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12"></rect>
-  </g>
-
-
-
-
-  <g transform="translate(84 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(147 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(209 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(271 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(323 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(374 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(479 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(541 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(593 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(644 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(696 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(748 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(799 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(850 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(902 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(964 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(1069 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(1111 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(1216 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(1291 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(1410 230)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-
-  <g transform="translate(513 90)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(513 138)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(513 180)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-
-
-  <g transform="translate(568 279)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(568 324)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-  <g transform="translate(568 372)" class="motor cursor-pointer" gui-id="0" motor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <circle class="status" cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" fill="#e6e6e6" />
-    <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z"/>
-  </g>
-
-
-  <g transform="translate(100 260)" class="device" gui-id="1" device-id="0" data-toggle="tooltip" data-html="true" title="">
-    <rect class="status" x="0" y="0" width="19.914" height="9.863" style="fill:#e6e6e6"/>
-    <path d="M0,0v10h20v-10h-20Zm.686,9.318v-8.636h17.94l-17.393,8.636h-.547Z"/>
-  </g>
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(100 260)"  gui-id="1" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(229 260)"  gui-id="2" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(345 260)"  gui-id="3" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(415 260)"  gui-id="4" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(470 260)"  gui-id="5" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(563 260)"  gui-id="6" />
 </svg>

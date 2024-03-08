@@ -6,7 +6,7 @@
 /* global ipcRenderer */
 
 
-
+/*Labels*/
 function setConveyorsLabel(){
     let conveyors=basic_info['conveyors'];
     if(conveyors!=undefined){
@@ -54,6 +54,60 @@ $(document).on('click','#btn_toggle_legend',function (event){
     //window.open('components/general/general_colors.svg', '_blank', 'top=0,left=0')
     ipcRenderer.send("sendRequestToIpcMain", "showChildWindow",{'name':'legend'});
 })
+
+
+/*States*/
+function setConveyorsStates(conveyor_states){
+    let conveyor_colors = { "0" : "#ccc",  "1" : "#27e22b", "2" : "#ffc000", "3" : "red","4":"#87cefa"};
+    for(let key in conveyor_states){
+        $('.conveyor[conveyor-id='+conveyor_states[key]['conveyor_id']+']').css('stroke',conveyor_colors[conveyor_states[key]['state']]);
+    }
+}
+function setPhotoeyesStates(input_states){
+    let input_colors = {"in-active" : "#39b54a", "active" : "#f7931e"};
+    for(let key in basic_info['inputs']){
+        let input=basic_info['inputs'][key];
+        if((input['input_type']==0)&&(input['device_type']==0)&&(input['device_number']==0)&& (input['gui_id']>0)){
+            let state='in-active'
+            if(input_states[key]){
+                if(input['active_state']==input_states[key]['state']){
+                    state='active'
+                }
+            }
+            $('.photoeye[input-id='+input["input_id"]+']').css('fill',input_colors[state]);
+        }
+    }
+}
+function setDevicesStates(device_states){
+    let device_colors = {"0" : "#f00", "1" : "#27e22b"};
+    for(let key in basic_info['devices']){
+        let device=basic_info['devices'][key];
+        if(device['gui_id']>0 ){
+            let state=0;
+            if(device_states[key]!=undefined){
+                state=device_states[key]['state'];
+            }
+            $('.device[device-id='+device["device_id"]+']').css('fill',device_colors[state]);
+        }
+    }
+}
+function setMotorsLabel(){
+    for(let key in basic_info['motors']){
+        let motor=basic_info['motors'][key];
+        if(motor['gui_id']>0){
+            $('.motor[gui-id='+motor["gui_id"]+']').attr('motor-id',motor["motor_id"]).attr('data-original-title',motor['motor_name']+'<br>'+motor['ip_address']+'<br>Loc: '+motor['location']).show();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 $('#switch_legend_production').change(function () {
     if ($(this).is(":checked")) {
@@ -233,25 +287,8 @@ function setBinsStates(bin_states){
         $('.bin[bin-id='+bin_states[bin_key]['bin_id']+'] rect').css('fill',bin_color);
     }
 }
-function setConveyorsStates(conveyor_states){
-    let conveyor_colors = { "0" : "#ccc",  "1" : "#27e22b", "2" : "#ffc000", "3" : "red","4":"#87cefa"};
-    for(let key in conveyor_states){
-        $('.conveyor[conveyor-id='+conveyor_states[key]['conveyor_id']+'] .status').css('fill',conveyor_colors[conveyor_states[key]['state']]);
-    }
-}
-function setDevicesStates(device_states){
-    let device_colors = {"0" : "#f00", "1" : "#27e22b"};
-    for(let key in basic_info['devices']){
-        let device=basic_info['devices'][key];
-        if(device['gui_id']>0 ){
-            let state=0;
-            if(device_states[key]!=undefined){
-                state=device_states[key]['state'];
-            }
-            $('.device[device-id='+device["device_id"]+'] .status').css('fill',device_colors[state]);
-        }
-    }
-}
+
+
 function setDoorsStates(input_states){
     let machine_id=basic_info['selectedMachineId'];
     $('.door').hide();//hide all buttons
@@ -312,29 +349,8 @@ function setEstopsStates(input_states){
         }
     }
 }
-function setMotorsLabel(){
-    for(let key in basic_info['motors']){
-        let motor=basic_info['motors'][key];
-        if(motor['gui_id']>0){
-            $('.motor[gui-motor-id='+motor["gui_id"]+']').attr('motor-id',motor["motor_id"]).attr('data-original-title',motor['motor_name']+'<br>'+motor['ip_address']+'<br>Loc: '+motor['location']).show();
-        }
-    }
-}
-function setPhotoeyesStates(input_states){
-    let input_colors = {"in-active" : "#39b54a", "active" : "#f7931e"};
-    for(let key in basic_info['inputs']){
-        let input=basic_info['inputs'][key];
-        if((input['input_type']==0)&&(input['device_type']==0)&&(input['device_number']==0)&& (input['gui_id']>0)){
-            let state='in-active'
-            if(input_states[key]){
-                if(input['active_state']==input_states[key]['state']){
-                    state='active'
-                }
-            }
-            $('.photoeye[input-id='+input["input_id"]+'] .status').css('fill',input_colors[state]);
-        }
-    }
-}
+
+
 function setStatisticsCounter(statistics_counter){
     if(statistics_counter.length>0){
         let shiftInfo=statistics_counter[0];
