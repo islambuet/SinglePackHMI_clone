@@ -32,14 +32,15 @@
       <rect x="54" y="0" width="3.6" height="12"></rect>
     </g>
     <g id="device">
-      <rect x="0" y="0" width="19.914" height="9.863"/>
-      <path d="M0,0v10h20v-10h-20Zm.686,9.318v-8.636h17.94l-17.393,8.636h-.547Z"  style="fill:black"/>
+      <rect x="0" y="0" width="15" height="8" style="stroke:black;" />
+      <polygon points="0 8  15 8 15 0" style="fill:black;" ></polygon>
     </g>
     <g id="motor">
-      <circle cx="8.75" cy="8.75" r="7.304" stroke="black" stroke-width="1" />
-      <path d="M8.75,.75c-4.411,0-8,3.589-8,8s3.589,8,8,8,8-3.589,8-8-3.589-8-8-8Zm-7.304,8c0-4.028,3.277-7.305,7.304-7.305,2.014,0,3.84,.82,5.162,2.142l-10.325,10.325c-1.323-1.322-2.142-3.148-2.142-5.162Z" style="fill:black"/>
+      <circle cx="7" cy="7" r="6" style="stroke:black;"/>
+      <path transform="translate(-3,7) rotate(-45)" d="M1,7 a6 6 0 0 0 12 0 L1,7" style="stroke:black;fill:black;" />
     </g>
   </defs>
+
   <image href="components/general/<%= system_general_layout_no %>/bg.png"/>
 
   <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="72" height="35" transform="translate(30,205)" gui-id="1" />
