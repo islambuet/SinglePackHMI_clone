@@ -41,67 +41,70 @@
     </g>
   </defs>
 
-  <image href="components/general/<%= system_general_layout_no %>/bg.png"/>
+  <image id="bg_image" href="components/general/<%= system_general_layout_no %>/bg.png"/>
 
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="72" height="35" transform="translate(30,205)" gui-id="1" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="60" height="35" transform="translate(108,205)" gui-id="2" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="35" transform="translate(174,205)" gui-id="3" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="35" transform="translate(237,205)" gui-id="4" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(300,205)" gui-id="5" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(353,205)" gui-id="6" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="99" height="35" transform="translate(405,205)" gui-id="7" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="59" height="35" transform="translate(510,205)" gui-id="8" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(575,205)" gui-id="9" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(628,205)" gui-id="10" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(681,205)" gui-id="1" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(733,205)" gui-id="2" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(785,205)" gui-id="3" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(838,205)" gui-id="4" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(890,205)" gui-id="5" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="35" transform="translate(942,205)" gui-id="6" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="100" height="35" transform="translate(1005,205)" gui-id="7" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="39" height="35" transform="translate(1111,205)" gui-id="8" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="100" height="35" transform="translate(1156,205)" gui-id="9" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="70" height="35" transform="translate(1262,205)" gui-id="10" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="100" height="35" transform="translate(1338,205)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="72" height="25" transform="translate(30,210)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="60" height="25" transform="translate(108,210)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(174,210)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(237,210)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(300,210)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(353,210)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(405,210)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(458,210)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="59" height="25" transform="translate(510,210)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(575,210)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(628,210)" gui-id="10" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(681,210)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(733,210)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(785,210)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(838,210)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(890,210)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(942,210)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1005,210)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1058,210)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="39" height="25" transform="translate(1111,210)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1156,210)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1209,210)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="70" height="25" transform="translate(1262,210)" gui-id="10" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1338,210)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1391,210)" gui-id="2" />
 
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(497,0)" gui-id="1" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="36" transform="translate(497,120)" gui-id="2" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(497,162)" gui-id="3" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="40" height="35" transform="translate(580,110)" gui-id="4" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="40" height="35" transform="translate(580,151)" gui-id="5" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="35" transform="translate(626,110)" gui-id="6" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="50" height="35" transform="translate(678,110)" gui-id="7" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(733,110)" gui-id="8" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="43" transform="translate(733,150)" gui-id="9" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(786,110)" gui-id="10" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(840,110)" gui-id="1" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(840,150)" gui-id="2" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(920,0)" gui-id="3" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="36" transform="translate(920,120)" gui-id="4" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(920,162)" gui-id="5" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(1248,0)" gui-id="6" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="36" transform="translate(1248,120)" gui-id="7" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(1248,162)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(501,0)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(501,120)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(501,162)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="75" height="25" transform="translate(583,120)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(583,155)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(672,120)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(733,120)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="38" transform="translate(733,155)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(786,120)" gui-id="10" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(841,120)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(841,155)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(925,0)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(925,120)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(925,162)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1253,0)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(1253,120)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1253,162)" gui-id="8" />
 
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="36" transform="translate(550,248)" gui-id="1" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(550,290)" gui-id="2" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(550,331)" gui-id="3" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(635,254)" gui-id="4" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="40" height="35" transform="translate(635,295)" gui-id="5" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(681,295)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(555,248)" gui-id="1" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(555,290)" gui-id="2" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(555,331)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(637,254)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(635,301)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(681,301)" gui-id="6" />
   <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="43" transform="translate(733,246)" gui-id="7" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(733,295)" gui-id="8" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(786,295)" gui-id="9" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="35" transform="translate(839,295)" gui-id="10" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(733,301)" gui-id="8" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(784,301)" gui-id="9" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="95" height="25" transform="translate(839,301)" gui-id="10" />
   <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="43" transform="translate(892,246)" gui-id="1" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(892,295)" gui-id="2" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(974,248)" gui-id="3" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(974,290)" gui-id="4" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(974,331)" gui-id="5" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(1302,248)" gui-id="6" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="35" transform="translate(1302,290)" gui-id="7" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="114" transform="translate(1302,331)" gui-id="8" />
+
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(979,248)" gui-id="3" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(979,290)" gui-id="4" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(979,331)" gui-id="5" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1307,248)" gui-id="6" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1307,290)" gui-id="7" />
+  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1307,331)" gui-id="8" />
 
 
   <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(85 250) rotate(-90)"  gui-id="1" />

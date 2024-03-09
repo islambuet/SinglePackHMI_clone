@@ -38,14 +38,17 @@ function setDevicesLabel(){
 }
 
 
+$(document).on('click','#btn_toggle_bg',function (event){
+    $('#bg_image').toggle();
+})
 $(document).on('click','#btn_toggle_conveyors',function (event){
     $('.conveyor').not('[conveyor-id=0]').toggle();
 })
-$(document).on('click','#btn_toggle_devices',function (event){
-    $('.device').not('[device-id=0]').toggle();
-})
 $(document).on('click','#btn_toggle_photoeyes',function (event){
     $('.photoeye').not('[input-id=0]').toggle();
+})
+$(document).on('click','#btn_toggle_devices',function (event){
+    $('.device').not('[device-id=0]').toggle();
 })
 $(document).on('click','#btn_toggle_motors',function (event){
     $('.motor').not('[motor-id=0]').toggle();
