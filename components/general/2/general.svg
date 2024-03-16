@@ -172,31 +172,92 @@
   <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,408)"  gui-id="4" />
 
 
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(30,40)"  gui-id="1" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(0,250)"  gui-id="1" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(120,250)"  gui-id="2" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(249,250)"  gui-id="3" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(400,250)"  gui-id="4" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(445,250)"  gui-id="5" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(490,250)"  gui-id="6" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(583,250)"  gui-id="7" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(690,250)"  gui-id="8" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(754,250)"  gui-id="9" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(784,250)"  gui-id="10" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(848,250)"  gui-id="11" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,250)"  gui-id="12" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(0,250)"  gui-id="11" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(120,250)"  gui-id="12" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(249,250)"  gui-id="13" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(400,250)"  gui-id="14" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(445,250)"  gui-id="15" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(490,250)"  gui-id="16" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(583,250)"  gui-id="17" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(690,250)"  gui-id="18" />
 
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(848,250)"  gui-id="21" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,250)"  gui-id="22" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,250)"  gui-id="23" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1100,250)"  gui-id="24" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1150,250)"  gui-id="25" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1190,250)"  gui-id="26" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1240,250)"  gui-id="27" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1305,250)"  gui-id="28" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1380,250)"  gui-id="29" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1430,250)"  gui-id="30" />
 
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(754,250)"  gui-id="31" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(784,250)"  gui-id="32" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,265)"  gui-id="8" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(634,265)"  gui-id="9" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(805,265)"  gui-id="41" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(634,265)"  gui-id="43" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(720,338)"  gui-id="42" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(835,338)"  gui-id="44" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,265)"  gui-id="45" />
 
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(580,170)"  gui-id="55" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(680,98)"  gui-id="54" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(732,170)"  gui-id="51" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(820,98)"  gui-id="52" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(903,170)"  gui-id="53" />
 
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745,338)"  gui-id="61" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,338)"  gui-id="62" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(785,338)"  gui-id="63" />
 
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(645,338)"  gui-id="71" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(665,338)"  gui-id="72" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(685,338)"  gui-id="73" />
 
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(905,338)"  gui-id="81" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(925,338)"  gui-id="82" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(945,338)"  gui-id="83" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,305)"  gui-id="10" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,361)"  gui-id="11" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,411)"  gui-id="12" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745,98)"  gui-id="91" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,98)"  gui-id="92" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(785,98)"  gui-id="93" />
+
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(850,98)"  gui-id="101" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,98)"  gui-id="102" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(890,98)"  gui-id="103" />
+
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(590,98)"  gui-id="111" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(610,98)"  gui-id="112" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(630,98)"  gui-id="113" />
+
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,5)"  gui-id="121" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,55)"  gui-id="122" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,108)"  gui-id="123" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,160)"  gui-id="124" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,265)"  gui-id="128" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,305)"  gui-id="127" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,361)"  gui-id="126" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,411)"  gui-id="125" />
+
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,5)"  gui-id="131" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,55)"  gui-id="132" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,108)"  gui-id="133" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,160)"  gui-id="134" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,265)"  gui-id="138" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,305)"  gui-id="137" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,361)"  gui-id="136" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,411)"  gui-id="135" />
+
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,5)"  gui-id="141" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,55)"  gui-id="142" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,108)"  gui-id="143" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,160)"  gui-id="144" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,265)"  gui-id="148" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,305)"  gui-id="147" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,361)"  gui-id="146" />
+  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,411)"  gui-id="145" />
 
 </svg>
