@@ -147,21 +147,52 @@
   <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(280,215)"  gui-id="4" />
   <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(333,215)"  gui-id="5" />
   <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(385,215)"  gui-id="6" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(490,215)"  gui-id="7" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(555,215)"  gui-id="8" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(608,215)"  gui-id="9" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(661,215)"  gui-id="10" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(713,215)"  gui-id="11" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,215)"  gui-id="12" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(818,215)"  gui-id="13" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,215)"  gui-id="14" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(922,215)"  gui-id="15" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(985,215)"  gui-id="16" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1091,215)"  gui-id="17" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1136,215)"  gui-id="18" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1242,215)"  gui-id="19" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1318,215)"  gui-id="20" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1423,215)"  gui-id="21" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(428,215)"  gui-id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(443,215)"  gui-id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(458,215)"  gui-id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(481,215)"  gui-id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(496,215)"  gui-id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(511,215)"  gui-id="6" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(555,215)"  gui-id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(608,215)"  gui-id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(661,215)"  gui-id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(713,215)"  gui-id="4" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(758,215)"  gui-id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(780,215)"  gui-id="2" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(818,215)"  gui-id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,215)"  gui-id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(922,215)"  gui-id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(985,215)"  gui-id="4" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1028,215)"  gui-id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1043,215)"  gui-id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1058,215)"  gui-id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1081,215)"  gui-id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1096,215)"  gui-id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1111,215)"  gui-id="6" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1140,215)"  gui-id="1" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1178,215)"  gui-id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1193,215)"  gui-id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1208,215)"  gui-id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1232,215)"  gui-id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1247,215)"  gui-id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1262,215)"  gui-id="6" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1318,215)"  gui-id="1" />
+
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1361,215)"  gui-id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1376,215)"  gui-id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1391,215)"  gui-id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1413,215)"  gui-id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1428,215)"  gui-id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1443,215)"  gui-id="6" />
+
 
   <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,18)"  gui-id="22" />
   <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,138)"  gui-id="23" />
