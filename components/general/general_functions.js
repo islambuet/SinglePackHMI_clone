@@ -11,8 +11,8 @@ function setConveyorsLabel(){
     let conveyors=basic_info['conveyors'];
     if(conveyors!=undefined){
         Object.values(conveyors).forEach(record => {
-            if(record['gui_id']>0){
-                $('.conveyor[gui-id='+record['gui_id']+']').attr('conveyor-id',record['conveyor_id']).attr('data-original-title',record['conveyor_name']).show();
+            if(record['gui_id']){
+                $('.conveyor[gui_id="'+record['gui_id']+'"]').attr('conveyor_id',record['conveyor_id']).attr('data-original-title',record['conveyor_name']).show();
             }
         })
     }
@@ -22,12 +22,12 @@ function setInputsLabel(){
     if(inputs!=undefined){
         Object.values(inputs).forEach(record => {
             //if(record['gui_id']>0 && (record['input_type']==0)&& (record['device_type']==0)&& (record['device_number']==0) ){
-            if(record['gui_id']>0){
+            if(record['gui_id']){
                 if(record['input_type']==0){
-                    $('.photoeye[gui-id='+record['gui_id']+']').attr('input-id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
+                    $('.photoeye[gui_id="'+record['gui_id']+'"]').attr('input_id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
                 }
                 else if(record['input_type']==3){
-                    $('.estop[gui-id='+record['gui_id']+']').attr('input-id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
+                    $('.estop[gui_id="'+record['gui_id']+'"]').attr('input_id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
                 }
             }
         })
@@ -37,8 +37,8 @@ function setDevicesLabel(){
     let devices=basic_info['devices'];
     for(let key in devices){
         let device=devices[key];
-        if(device['gui_id']>0 ){
-            $('.device[gui-id='+device["gui_id"]+']').attr('device-id',device["device_id"]).attr('data-original-title',device['device_name']+'<br>'+device['ip_address']).show();
+        if(device['gui_id'] ){
+            $('.device[gui_id="'+device["gui_id"]+'"]').attr('device_id',device["device_id"]).attr('data-original-title',device['device_name']+'<br>'+device['ip_address']).show();
         }
     }
 }
@@ -73,7 +73,7 @@ $(document).on('click','#btn_toggle_legend',function (event){
 function setConveyorsStates(conveyor_states){
     let conveyor_colors = { "0" : "#ccc",  "1" : "#27e22b", "2" : "#ffc000", "3" : "red","4":"#87cefa"};
     for(let key in conveyor_states){
-        $('.conveyor[conveyor-id='+conveyor_states[key]['conveyor_id']+']').css('stroke',conveyor_colors[conveyor_states[key]['state']]);
+        $('.conveyor[conveyor_id='+conveyor_states[key]['conveyor_id']+']').css('stroke',conveyor_colors[conveyor_states[key]['state']]);
     }
 }
 function setInputsStates(input_states){
@@ -87,12 +87,12 @@ function setInputsStates(input_states){
                 state='active'
             }
         }
-        if(input['gui_id']>0){
+        if(input['gui_id']){
             if(input['input_type']==0){
-                $('.photoeye[input-id='+input["input_id"]+']').css('fill',photoeye_colors[state]);
+                $('.photoeye[input_id='+input["input_id"]+']').css('fill',photoeye_colors[state]);
             }
             else if(input['input_type']==3){
-                $('.estop[input-id='+input["input_id"]+']').css('fill',estop_colors[state]);
+                $('.estop[input_id='+input["input_id"]+']').css('fill',estop_colors[state]);
             }
         }
     }
@@ -101,20 +101,20 @@ function setDevicesStates(device_states){
     let device_colors = {"0" : "#f00", "1" : "#27e22b"};
     for(let key in basic_info['devices']){
         let device=basic_info['devices'][key];
-        if(device['gui_id']>0 ){
+        if(device['gui_id']){
             let state=0;
             if(device_states[key]!=undefined){
                 state=device_states[key]['state'];
             }
-            $('.device[device-id='+device["device_id"]+']').css('fill',device_colors[state]);
+            $('.device[device_id='+device["device_id"]+']').css('fill',device_colors[state]);
         }
     }
 }
 function setMotorsLabel(){
     for(let key in basic_info['motors']){
         let motor=basic_info['motors'][key];
-        if(motor['gui_id']>0){
-            $('.motor[gui-id='+motor["gui_id"]+']').attr('motor-id',motor["motor_id"]).attr('data-original-title',motor['motor_name']+'<br>'+motor['ip_address']+'<br>Loc: '+motor['location']).show();
+        if(motor['gui_id']){
+            $('.motor[gui_id="'+motor["gui_id"]+'"]').attr('motor_id',motor["motor_id"]).attr('data-original-title',motor['motor_name']+'<br>'+motor['ip_address']+'<br>Loc: '+motor['location']).show();
         }
     }
 }

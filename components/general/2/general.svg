@@ -47,264 +47,271 @@
 
   <image transform="translate(20,0)" id="bg_image" href="components/general/<%= system_general_layout_no %>/bg.png"/>
 
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="72" height="25" transform="translate(50,210)" gui-id="1" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="60" height="25" transform="translate(128,210)" gui-id="2" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(194,210)" gui-id="3" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(257,210)" gui-id="4" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(320,210)" gui-id="5" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(373,210)" gui-id="6" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(425,210)" gui-id="7" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(478,210)" gui-id="8" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="59" height="25" transform="translate(530,210)" gui-id="9" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(595,210)" gui-id="10" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(648,210)" gui-id="11" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(701,210)" gui-id="12" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,210)" gui-id="13" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(805,210)" gui-id="14" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(858,210)" gui-id="15" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(910,210)" gui-id="16" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(962,210)" gui-id="17" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1025,210)" gui-id="18" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1078,210)" gui-id="19" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="39" height="25" transform="translate(1131,210)" gui-id="20" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1176,210)" gui-id="21" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1229,210)" gui-id="22" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="70" height="25" transform="translate(1282,210)" gui-id="23" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1358,210)" gui-id="24" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1411,210)" gui-id="25" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="72" height="25" transform="translate(50,210)" gui_id="1" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="60" height="25" transform="translate(128,210)" gui_id="2" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(194,210)" gui_id="3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(257,210)" gui_id="4" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(320,210)" gui_id="5" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(373,210)" gui_id="6" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(425,210)" gui_id="7" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(478,210)" gui_id="8" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="59" height="25" transform="translate(530,210)" gui_id="9" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(595,210)" gui_id="10" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(648,210)" gui_id="11" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(701,210)" gui_id="12" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,210)" gui_id="13" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(805,210)" gui_id="14" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(858,210)" gui_id="15" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(910,210)" gui_id="16" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(962,210)" gui_id="17" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1025,210)" gui_id="18" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1078,210)" gui_id="19" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="39" height="25" transform="translate(1131,210)" gui_id="20" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1176,210)" gui_id="21" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1229,210)" gui_id="22" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="70" height="25" transform="translate(1282,210)" gui_id="23" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1358,210)" gui_id="24" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1411,210)" gui_id="25" />
 
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="43" transform="translate(753,246)" gui-id="26" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,301)" gui-id="27" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(701,301)" gui-id="28" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(655,301)" gui-id="29" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(657,254)" gui-id="30" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(804,301)" gui-id="31" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="95" height="25" transform="translate(859,301)" gui-id="32" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="43" transform="translate(912,246)" gui-id="33" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="43" transform="translate(753,246)" gui_id="26" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,301)" gui_id="27" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(701,301)" gui_id="28" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(655,301)" gui_id="29" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(657,254)" gui_id="30" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(804,301)" gui_id="31" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="95" height="25" transform="translate(859,301)" gui_id="32" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="43" transform="translate(912,246)" gui_id="33" />
 
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="38" transform="translate(753,155)" gui-id="34" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,120)" gui-id="35" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(806,120)" gui-id="36" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(861,120)" gui-id="37" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(861,155)" gui-id="38" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(692,120)" gui-id="39" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="75" height="25" transform="translate(603,120)" gui-id="40" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(603,155)" gui-id="41" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="38" transform="translate(753,155)" gui_id="34" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,120)" gui_id="35" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(806,120)" gui_id="36" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(861,120)" gui_id="37" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(861,155)" gui_id="38" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(692,120)" gui_id="39" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="75" height="25" transform="translate(603,120)" gui_id="40" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(603,155)" gui_id="41" />
 
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(521,0)" gui-id="42" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(521,120)" gui-id="43" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(521,162)" gui-id="44" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(521,0)" gui_id="42" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(521,120)" gui_id="43" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(521,162)" gui_id="44" />
 
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(575,331)" gui-id="45" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(575,290)" gui-id="46" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(575,248)" gui-id="47" />
-
-
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(945,0)" gui-id="48" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(945,120)" gui-id="49" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(945,162)" gui-id="50" />
-
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(998,331)" gui-id="51" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(998,290)" gui-id="52" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(998,248)" gui-id="53" />
-
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1273,0)" gui-id="54" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(1273,120)" gui-id="55" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1273,162)" gui-id="56" />
-
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1327,248)" gui-id="59" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1327,290)" gui-id="58" />
-  <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1327,331)" gui-id="57" />
-
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,30)"  gui-id="1001" />
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,50)"  gui-id="1002" />
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,70)"  gui-id="1003" />
-
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(582,50)"  gui-id="1011" />
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1010,50)"  gui-id="1013" />
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1335,50)"  gui-id="1015" />
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(636,390)"  gui-id="1012" />
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1060,390)"  gui-id="1014" />
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1390,390)"  gui-id="1016" />
-
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(740,78)"  gui-id="1021" />
-  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(800,350)"  gui-id="1022" />
-
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(297,250) rotate(-90)"  gui-id="4" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(350,250) rotate(-90)"  gui-id="5" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(402,250) rotate(-90)"  gui-id="6" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(507,250) rotate(-90)"  gui-id="7" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(572,250) rotate(-90)"  gui-id="8" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(625,250) rotate(-90)"  gui-id="9" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(678,250) rotate(-90)"  gui-id="10" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(730,250) rotate(-90)"  gui-id="1" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(782,250) rotate(-90)"  gui-id="2" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(835,250) rotate(-90)"  gui-id="3" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(887,250) rotate(-90)"  gui-id="4" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(939,250) rotate(-90)"  gui-id="5" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1002,250) rotate(-90)"  gui-id="6" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1108,250) rotate(-90)"  gui-id="7" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1153,250) rotate(-90)"  gui-id="8" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1259,250) rotate(-90)"  gui-id="9" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1335,250) rotate(-90)"  gui-id="10" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1440,250) rotate(-90)"  gui-id="2" />
-
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(507,6)"  gui-id="1" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(507,126)"  gui-id="2" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(507,168)"  gui-id="3" />
-
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,267)"  gui-id="1" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,307)"  gui-id="2" />
-  <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,425)"  gui-id="3" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(88,215)"  gui-id="1" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(154,215)"  gui-id="2" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(217,215)"  gui-id="3" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(280,215)"  gui-id="4" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(333,215)"  gui-id="5" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(385,215)"  gui-id="6" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(428,215)"  gui-id="1" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(443,215)"  gui-id="2" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(458,215)"  gui-id="3" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(481,215)"  gui-id="4" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(496,215)"  gui-id="5" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(511,215)"  gui-id="6" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(555,215)"  gui-id="1" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(608,215)"  gui-id="2" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(661,215)"  gui-id="3" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(713,215)"  gui-id="4" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(758,215)"  gui-id="1" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(780,215)"  gui-id="2" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(818,215)"  gui-id="1" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,215)"  gui-id="2" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(922,215)"  gui-id="3" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(985,215)"  gui-id="4" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1028,215)"  gui-id="1" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1043,215)"  gui-id="2" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1058,215)"  gui-id="3" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1081,215)"  gui-id="4" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1096,215)"  gui-id="5" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1111,215)"  gui-id="6" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1140,215)"  gui-id="1" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1178,215)"  gui-id="1" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1193,215)"  gui-id="2" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1208,215)"  gui-id="3" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1232,215)"  gui-id="4" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1247,215)"  gui-id="5" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1262,215)"  gui-id="6" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1318,215)"  gui-id="1" />
-
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1361,215)"  gui-id="1" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1376,215)"  gui-id="2" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1391,215)"  gui-id="3" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1413,215)"  gui-id="4" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1428,215)"  gui-id="5" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1443,215)"  gui-id="6" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(575,331)" gui_id="45" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(575,290)" gui_id="46" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(575,248)" gui_id="47" />
 
 
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,18)"  gui-id="22" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,138)"  gui-id="23" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,180)"  gui-id="1" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(945,0)" gui_id="48" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(945,120)" gui_id="49" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(945,162)" gui_id="50" />
 
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,250)"  gui-id="2" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,290)"  gui-id="3" />
-  <use xlink:href="#motor" class="motor cursor-pointer" motor-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,408)"  gui-id="4" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(998,331)" gui_id="51" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(998,290)" gui_id="52" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(998,248)" gui_id="53" />
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1273,0)" gui_id="54" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(1273,120)" gui_id="55" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1273,162)" gui_id="56" />
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1327,248)" gui_id="59" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1327,290)" gui_id="58" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1327,331)" gui_id="57" />
+
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,30)"  gui_id="MCP_ESTOP_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,50)"  gui_id="DEMATIC_LOOP_OK" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,70)"  gui_id="K2_SAFETY_RELAY_OK" />
+
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(582,50)"  gui_id="PS1_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1010,50)"  gui_id="PS3_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1335,50)"  gui_id="PS4_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(636,390)"  gui_id="PS2_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1060,390)"  gui_id="PS4_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1390,390)"  gui_id="PS16E-STOP_ZONE_OPEN" />
+
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(740,78)"  gui_id="LHS_ESTOP_DIAG_ZONE_2" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(800,350)"  gui_id="RHS_ESTOP_DIAG_ZONE_1" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(20,195) rotate(90)"  gui_id="TRAY_COUNT_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(45,195) rotate(90)"  gui_id="ZONE_START_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(113,195) rotate(90)"  gui_id="ZONE1_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(179,195) rotate(90)"  gui_id="ZONE2_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(242,195) rotate(90)"  gui_id="ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(305,195) rotate(90)"  gui_id="ZONE4_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(358,195) rotate(90)"  gui_id="ZONE5_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(410,195) rotate(90)"  gui_id="ZONE6_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(463,195) rotate(90)"  gui_id="ZONE7_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(515,195) rotate(90)"  gui_id="ZONE8_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(580,195) rotate(90)"  gui_id="ZONE9_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(633,195) rotate(90)"  gui_id="ZONE10_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(686,195) rotate(90)"  gui_id="ZONE11_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(738,195) rotate(90)"  gui_id="ZONE12_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,195) rotate(90)"  gui_id="ZONE13_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(805,210) rotate(150)"  gui_id="ZONE13_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(820,195) rotate(90)"  gui_id="ZONE14_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(843,195) rotate(90)"  gui_id="ZONE14_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(895,195) rotate(90)"  gui_id="ZONE15_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(957,195) rotate(90)"  gui_id="ZONE16_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1010,195) rotate(90)"  gui_id="ZONE17_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1063,195) rotate(90)"  gui_id="ZONE18_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1116,195) rotate(90)"  gui_id="ZONE19_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1161,195) rotate(90)"  gui_id="ZONE20_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1214,195) rotate(90)"  gui_id="ZONE21_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1267,195) rotate(90)"  gui_id="ZONE22_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1343,195) rotate(90)"  gui_id="ZONE23_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1396,195) rotate(90)"  gui_id="ZONE24_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1448,195) rotate(90)"  gui_id="ZONE25_PE" />
 
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(30,40)"  gui-id="1" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,190)"  gui_id="ZONE_L1_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,235)"  gui_id="ZONE_R1_ENTRY_PE" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(0,250)"  gui-id="11" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(120,250)"  gui-id="12" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(249,250)"  gui-id="13" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(400,250)"  gui-id="14" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(445,250)"  gui-id="15" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(490,250)"  gui-id="16" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(583,250)"  gui-id="17" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(690,250)"  gui-id="18" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(88,215)"  gui_id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(154,215)"  gui_id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(217,215)"  gui_id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(280,215)"  gui_id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(333,215)"  gui_id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(385,215)"  gui_id="6" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(848,250)"  gui-id="21" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,250)"  gui-id="22" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,250)"  gui-id="23" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1100,250)"  gui-id="24" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1150,250)"  gui-id="25" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1190,250)"  gui-id="26" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1240,250)"  gui-id="27" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1305,250)"  gui-id="28" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1380,250)"  gui-id="29" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1430,250)"  gui-id="30" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(428,215)"  gui_id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(443,215)"  gui_id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(458,215)"  gui_id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(481,215)"  gui_id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(496,215)"  gui_id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(511,215)"  gui_id="6" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(754,250)"  gui-id="31" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(784,250)"  gui-id="32" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(555,215)"  gui_id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(608,215)"  gui_id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(661,215)"  gui_id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(713,215)"  gui_id="4" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(805,265)"  gui-id="41" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(634,265)"  gui-id="43" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(720,338)"  gui-id="42" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(835,338)"  gui-id="44" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,265)"  gui-id="45" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(758,215)"  gui_id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(780,215)"  gui_id="2" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(580,170)"  gui-id="55" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(680,98)"  gui-id="54" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(732,170)"  gui-id="51" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(820,98)"  gui-id="52" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(903,170)"  gui-id="53" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(818,215)"  gui_id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,215)"  gui_id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(922,215)"  gui_id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(985,215)"  gui_id="4" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745,338)"  gui-id="61" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,338)"  gui-id="62" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(785,338)"  gui-id="63" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1028,215)"  gui_id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1043,215)"  gui_id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1058,215)"  gui_id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1081,215)"  gui_id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1096,215)"  gui_id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1111,215)"  gui_id="6" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(645,338)"  gui-id="71" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(665,338)"  gui-id="72" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(685,338)"  gui-id="73" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1140,215)"  gui_id="1" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(905,338)"  gui-id="81" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(925,338)"  gui-id="82" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(945,338)"  gui-id="83" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1178,215)"  gui_id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1193,215)"  gui_id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1208,215)"  gui_id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1232,215)"  gui_id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1247,215)"  gui_id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1262,215)"  gui_id="6" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745,98)"  gui-id="91" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,98)"  gui-id="92" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(785,98)"  gui-id="93" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1318,215)"  gui_id="1" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(850,98)"  gui-id="101" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,98)"  gui-id="102" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(890,98)"  gui-id="103" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1361,215)"  gui_id="1" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1376,215)"  gui_id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1391,215)"  gui_id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1413,215)"  gui_id="4" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1428,215)"  gui_id="5" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1443,215)"  gui_id="6" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(590,98)"  gui-id="111" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(610,98)"  gui-id="112" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(630,98)"  gui-id="113" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,5)"  gui-id="121" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,55)"  gui-id="122" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,108)"  gui-id="123" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,160)"  gui-id="124" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,265)"  gui-id="128" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,305)"  gui-id="127" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,361)"  gui-id="126" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,411)"  gui-id="125" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,18)"  gui_id="22" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,138)"  gui_id="23" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,180)"  gui_id="1" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,5)"  gui-id="131" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,55)"  gui-id="132" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,108)"  gui-id="133" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,160)"  gui-id="134" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,265)"  gui-id="138" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,305)"  gui-id="137" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,361)"  gui-id="136" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,411)"  gui-id="135" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,250)"  gui_id="2" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,290)"  gui_id="3" />
+  <use xlink:href="#motor" class="motor cursor-pointer" motor_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,408)"  gui_id="4" />
 
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,5)"  gui-id="141" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,55)"  gui-id="142" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,108)"  gui-id="143" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,160)"  gui-id="144" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,265)"  gui-id="148" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,305)"  gui-id="147" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,361)"  gui-id="146" />
-  <use xlink:href="#device" class="device" device-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,411)"  gui-id="145" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(30,40)"  gui_id="1" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(0,250)"  gui_id="11" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(120,250)"  gui_id="12" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(249,250)"  gui_id="13" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(400,250)"  gui_id="14" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(445,250)"  gui_id="15" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(490,250)"  gui_id="16" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(583,250)"  gui_id="17" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(690,250)"  gui_id="18" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(848,250)"  gui_id="21" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,250)"  gui_id="22" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,250)"  gui_id="23" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1100,250)"  gui_id="24" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1150,250)"  gui_id="25" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1190,250)"  gui_id="26" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1240,250)"  gui_id="27" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1305,250)"  gui_id="28" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1380,250)"  gui_id="29" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1430,250)"  gui_id="30" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(754,250)"  gui_id="31" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(784,250)"  gui_id="32" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(805,265)"  gui_id="41" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(634,265)"  gui_id="43" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(720,338)"  gui_id="42" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(835,338)"  gui_id="44" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,265)"  gui_id="45" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(580,170)"  gui_id="55" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(680,98)"  gui_id="54" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(732,170)"  gui_id="51" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(820,98)"  gui_id="52" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(903,170)"  gui_id="53" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745,338)"  gui_id="61" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,338)"  gui_id="62" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(785,338)"  gui_id="63" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(645,338)"  gui_id="71" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(665,338)"  gui_id="72" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(685,338)"  gui_id="73" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(905,338)"  gui_id="81" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(925,338)"  gui_id="82" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(945,338)"  gui_id="83" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745,98)"  gui_id="91" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,98)"  gui_id="92" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(785,98)"  gui_id="93" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(850,98)"  gui_id="101" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,98)"  gui_id="102" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(890,98)"  gui_id="103" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(590,98)"  gui_id="111" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(610,98)"  gui_id="112" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(630,98)"  gui_id="113" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,5)"  gui_id="121" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,55)"  gui_id="122" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,108)"  gui_id="123" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,160)"  gui_id="124" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,265)"  gui_id="128" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,305)"  gui_id="127" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,361)"  gui_id="126" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,411)"  gui_id="125" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,5)"  gui_id="131" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,55)"  gui_id="132" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,108)"  gui_id="133" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,160)"  gui_id="134" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,265)"  gui_id="138" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,305)"  gui_id="137" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,361)"  gui_id="136" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,411)"  gui_id="135" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,5)"  gui_id="141" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,55)"  gui_id="142" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,108)"  gui_id="143" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,160)"  gui_id="144" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,265)"  gui_id="148" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,305)"  gui_id="147" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,361)"  gui_id="146" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,411)"  gui_id="145" />
 
 </svg>
