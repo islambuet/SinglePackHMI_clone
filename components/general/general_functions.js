@@ -17,12 +17,18 @@ function setConveyorsLabel(){
         })
     }
 }
-function setPhotoeyesLabel(){
+function setInputsLabel(){
     let inputs=basic_info['inputs']
     if(inputs!=undefined){
         Object.values(inputs).forEach(record => {
-            if(record['gui_id']>0 && (record['input_type']==0)&& (record['device_type']==0)&& (record['device_number']==0) ){
-                $('.photoeye[gui-id='+record['gui_id']+']').attr('input-id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
+            //if(record['gui_id']>0 && (record['input_type']==0)&& (record['device_type']==0)&& (record['device_number']==0) ){
+            if(record['gui_id']>0){
+                if(record['input_type']==0){
+                    $('.photoeye[gui-id='+record['gui_id']+']').attr('input-id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
+                }
+                else if(record['input_type']==3){
+                    $('.estop[gui-id='+record['gui_id']+']').attr('input-id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
+                }
             }
         })
     }
@@ -44,12 +50,16 @@ $(document).on('click','#btn_toggle_bg',function (event){
 $(document).on('click','#btn_toggle_conveyors',function (event){
     $('.conveyor').not('[conveyor-id=0]').toggle();
 })
-$(document).on('click','#btn_toggle_photoeyes',function (event){
-    $('.photoeye').not('[input-id=0]').toggle();
-})
 $(document).on('click','#btn_toggle_devices',function (event){
     $('.device').not('[device-id=0]').toggle();
 })
+$(document).on('click','#btn_toggle_estop',function (event){
+    $('.estop').not('[input-id=0]').toggle();
+})
+$(document).on('click','#btn_toggle_photoeyes',function (event){
+    $('.photoeye').not('[input-id=0]').toggle();
+})
+
 $(document).on('click','#btn_toggle_motors',function (event){
     $('.motor').not('[motor-id=0]').toggle();
 })
@@ -66,18 +76,24 @@ function setConveyorsStates(conveyor_states){
         $('.conveyor[conveyor-id='+conveyor_states[key]['conveyor_id']+']').css('stroke',conveyor_colors[conveyor_states[key]['state']]);
     }
 }
-function setPhotoeyesStates(input_states){
-    let input_colors = {"in-active" : "#39b54a", "active" : "#f7931e"};
+function setInputsStates(input_states){
+    let photoeye_colors = {"in-active" : "#39b54a", "active" : "#f7931e"};
+    let estop_colors = {"in-active" : "#39b54a", "active" : "#ff0000"};
     for(let key in basic_info['inputs']){
         let input=basic_info['inputs'][key];
-        if((input['input_type']==0)&&(input['device_type']==0)&&(input['device_number']==0)&& (input['gui_id']>0)){
-            let state='in-active'
-            if(input_states[key]){
-                if(input['active_state']==input_states[key]['state']){
-                    state='active'
-                }
+        let state='in-active';
+        if(input_states[key]){
+            if(input['active_state']==input_states[key]['state']){
+                state='active'
             }
-            $('.photoeye[input-id='+input["input_id"]+']').css('fill',input_colors[state]);
+        }
+        if(input['gui_id']>0){
+            if(input['input_type']==0){
+                $('.photoeye[input-id='+input["input_id"]+']').css('fill',photoeye_colors[state]);
+            }
+            else if(input['input_type']==3){
+                $('.estop[input-id='+input["input_id"]+']').css('fill',estop_colors[state]);
+            }
         }
     }
 }

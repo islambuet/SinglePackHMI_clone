@@ -15,13 +15,17 @@
       .device, .motor{
       fill:#e6e6e6;
       }
-      .conveyor, .photoeye, .device , .motor {
+      .conveyor, .photoeye, .estop, .device , .motor {
       display:none;
       }
       .cursor-pointer {
       cursor:pointer;
       }
     </style>
+    <g id="estop">
+      <rect  x="0" y="0" width="15.5" height="15.5" style="fill:#f5ea14;stroke:#ff0000;stroke-width:1px;"/>
+      <circle class="status" cx="7.75" cy="7.75" r="5" style="stroke:black;"/>
+    </g>
     <g id="photoeye">
       <polygon points="12 6 0 0 0 12 12 6"></polygon>
       <rect x="14" y="5" width="3.2" height="3.2"></rect>
@@ -112,7 +116,19 @@
   <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1327,290)" gui-id="58" />
   <rect class="conveyor" conveyor-id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1327,331)" gui-id="57" />
 
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,30)"  gui-id="1001" />
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,50)"  gui-id="1002" />
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,70)"  gui-id="1003" />
 
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(582,50)"  gui-id="1011" />
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1010,50)"  gui-id="1013" />
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1335,50)"  gui-id="1015" />
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(636,390)"  gui-id="1012" />
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1060,390)"  gui-id="1014" />
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1390,390)"  gui-id="1016" />
+
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(740,78)"  gui-id="1021" />
+  <use xlink:href="#estop" class="estop" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(800,350)"  gui-id="1022" />
 
   <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(297,250) rotate(-90)"  gui-id="4" />
   <use xlink:href="#photoeye" class="photoeye" input-id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(350,250) rotate(-90)"  gui-id="5" />

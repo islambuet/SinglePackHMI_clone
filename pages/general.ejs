@@ -24,7 +24,7 @@
         if(basic_info['connected']){
             $('[data-toggle="tooltip"]').tooltip();
             setConveyorsLabel();//general_functions
-            setPhotoeyesLabel();//general_functions
+            setInputsLabel();//general_functions
             setDevicesLabel();//general_functions
             setMotorsLabel();//general_functions
             requestPageData();
@@ -42,7 +42,7 @@
     }
     ipcRenderer.on("getGeneralViewData", function(e, jsonObject) {
         setConveyorsStates(jsonObject['data']['conveyors_states']);//general_functions
-        setPhotoeyesStates(jsonObject['data']['inputs_states']);//general_functions
+        setInputsStates(jsonObject['data']['inputs_states']);//general_functions
         setDevicesStates(jsonObject['data']['devices_states']);//general_functions
     })
 </script>
