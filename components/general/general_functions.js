@@ -29,6 +29,9 @@ function setInputsLabel(){
                 else if(record['input_type']==3){
                     $('.estop[gui_id="'+record['gui_id']+'"]').attr('input_id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
                 }
+                else if(record['input_type']==1){
+                    $('.proximity[gui_id="'+record['gui_id']+'"]').attr('input_id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
+                }
             }
         })
     }
@@ -59,6 +62,9 @@ $(document).on('click','#btn_toggle_estop',function (event){
 $(document).on('click','#btn_toggle_photoeyes',function (event){
     $('.photoeye').not('[input-id=0]').toggle();
 })
+$(document).on('click','#btn_toggle_proximity',function (event){
+    $('.proximity').not('[input-id=0]').toggle();
+})
 
 $(document).on('click','#btn_toggle_motors',function (event){
     $('.motor').not('[motor-id=0]').toggle();
@@ -79,6 +85,7 @@ function setConveyorsStates(conveyor_states){
 function setInputsStates(input_states){
     let photoeye_colors = {"in-active" : "#39b54a", "active" : "#f7931e"};
     let estop_colors = {"in-active" : "#39b54a", "active" : "#ff0000"};
+    let proximity_colors = {"in-active" : "#39b54a", "active" : "#ff0000"};
     for(let key in basic_info['inputs']){
         let input=basic_info['inputs'][key];
         let state='in-active';
@@ -93,6 +100,9 @@ function setInputsStates(input_states){
             }
             else if(input['input_type']==3){
                 $('.estop[input_id='+input["input_id"]+']').css('fill',estop_colors[state]);
+            }
+            else if(input['input_type']==1){
+                $('.proximity[input_id='+input["input_id"]+']').css('fill',proximity_colors[state]);
             }
         }
     }
