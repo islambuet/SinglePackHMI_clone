@@ -45,35 +45,45 @@ function setDevicesLabel(){
         }
     }
 }
+function setMotorsLabel(){
+    for(let key in basic_info['motors']){
+        let motor=basic_info['motors'][key];
+        if(motor['gui_id']){
+            $('.motor[gui_id="'+motor["gui_id"]+'"]').attr('motor_id',motor["motor_id"]).attr('clickable',motor["clickable"]).attr('data-original-title',motor['motor_name']+'<br>'+motor['ip_address']+'<br>Loc: '+motor['location']).show();
+        }
+    }
+}
 
 
 $(document).on('click','#btn_toggle_bg',function (event){
     $('#bg_image').toggle();
 })
 $(document).on('click','#btn_toggle_conveyors',function (event){
-    $('.conveyor').not('[conveyor-id=0]').toggle();
+    $('.conveyor').not('[conveyor_id=0]').toggle();
 })
 $(document).on('click','#btn_toggle_devices',function (event){
-    $('.device').not('[device-id=0]').toggle();
+    $('.device').not('[device_id=0]').toggle();
 })
 $(document).on('click','#btn_toggle_estop',function (event){
-    $('.estop').not('[input-id=0]').toggle();
+    $('.estop').not('[input_id=0]').toggle();
 })
 $(document).on('click','#btn_toggle_photoeyes',function (event){
-    $('.photoeye').not('[input-id=0]').toggle();
+    $('.photoeye').not('[input_id=0]').toggle();
 })
 $(document).on('click','#btn_toggle_proximity',function (event){
-    $('.proximity').not('[input-id=0]').toggle();
+    $('.proximity').not('[input_id=0]').toggle();
 })
-
 $(document).on('click','#btn_toggle_motors',function (event){
-    $('.motor').not('[motor-id=0]').toggle();
+    $('.motor').not('[motor_id=0]').toggle();
 })
 $(document).on('click','#btn_toggle_legend',function (event){
     //window.open('components/general/general_colors.svg', '_blank', 'top=0,left=0')
     ipcRenderer.send("sendRequestToIpcMain", "showChildWindow",{'name':'legend'});
 })
 
+$(document).on('click','.motor[clickable="1"]',function (event){
+    console.log($(this).attr('motor_id'))
+})
 
 /*States*/
 function setConveyorsStates(conveyor_states){
@@ -120,14 +130,7 @@ function setDevicesStates(device_states){
         }
     }
 }
-function setMotorsLabel(){
-    for(let key in basic_info['motors']){
-        let motor=basic_info['motors'][key];
-        if(motor['gui_id']){
-            $('.motor[gui_id="'+motor["gui_id"]+'"]').attr('motor_id',motor["motor_id"]).attr('data-original-title',motor['motor_name']+'<br>'+motor['ip_address']+'<br>Loc: '+motor['location']).show();
-        }
-    }
-}
+
 
 
 
