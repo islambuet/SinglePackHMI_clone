@@ -95,7 +95,7 @@ function setConveyorsStates(conveyor_states){
 function setInputsStates(input_states){
     let photoeye_colors = {"in-active" : "#39b54a", "active" : "#f7931e"};
     let estop_colors = {"in-active" : "#39b54a", "active" : "#ff0000"};
-    let proximity_colors = {"in-active" : "#39b54a", "active" : "#ff0000"};
+    let proximity_colors = {"in-active" : "#39b54a", "active" : "#f7931e"};
     for(let key in basic_info['inputs']){
         let input=basic_info['inputs'][key];
         let state='in-active';

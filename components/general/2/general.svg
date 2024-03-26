@@ -362,93 +362,93 @@
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(620,165)"  gui_id="Motor_Zone_L9" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(620,185)"  gui_id="Motor_Mc_Zone_L9" />
 
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,0) scale(1,.7)"  gui_id="Motor_Ma_PS1_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,11) scale(1,.7)"  gui_id="Motor_Mb_PS1_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,22) scale(1,.7)"  gui_id="Motor_Mc_PS1_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,33) scale(1,.7)"  gui_id="Motor_Md_PS1_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,44) scale(1,.7)"  gui_id="Motor_Me_PS1_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,55) scale(1,.7)"  gui_id="Motor_Ma_PS1_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,66) scale(1,.7)"  gui_id="Motor_Mb_PS1_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,77) scale(1,.7)"  gui_id="Motor_Mc_PS1_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,88) scale(1,.7)"  gui_id="Motor_Md_PS1_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,99) scale(1,.7)"  gui_id="Motor_Me_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,0) scale(.7,.7)"  gui_id="Motor_Ma_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,11) scale(.7,.7)"  gui_id="Motor_Mb_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,22) scale(.7,.7)"  gui_id="Motor_Mc_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,33) scale(.7,.7)"  gui_id="Motor_Md_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,44) scale(.7,.7)"  gui_id="Motor_Me_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,55) scale(.7,.7)"  gui_id="Motor_Ma_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,66) scale(.7,.7)"  gui_id="Motor_Mb_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,77) scale(.7,.7)"  gui_id="Motor_Mc_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,88) scale(.7,.7)"  gui_id="Motor_Md_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,99) scale(.7,.7)"  gui_id="Motor_Me_PS1_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,108)"  gui_id="Motor_Stop_PS1_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,130)"  gui_id="Motor_PS1_Zone_3" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,170)"  gui_id="Motor_PS1_Zone_4" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,190)"  gui_id="Motor_Mb_PS1_Zone_4" />
 
 
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,430) scale(1,.7)"  gui_id="Motor_Ma_PS2_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,419) scale(1,.7)"  gui_id="Motor_Mb_PS2_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,408) scale(1,.7)"  gui_id="Motor_Mc_PS2_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,397) scale(1,.7)"  gui_id="Motor_Md_PS2_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,386) scale(1,.7)"  gui_id="Motor_Me_PS2_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,375) scale(1,.7)"  gui_id="Motor_Ma_PS2_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,364) scale(1,.7)"  gui_id="Motor_Mb_PS2_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,353) scale(1,.7)"  gui_id="Motor_Mc_PS2_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,342) scale(1,.7)"  gui_id="Motor_Md_PS2_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,331) scale(1,.7)"  gui_id="Motor_Me_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,430) scale(.7,.7)"  gui_id="Motor_Ma_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,419) scale(.7,.7)"  gui_id="Motor_Mb_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,408) scale(.7,.7)"  gui_id="Motor_Mc_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,397) scale(.7,.7)"  gui_id="Motor_Md_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,386) scale(.7,.7)"  gui_id="Motor_Me_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,375) scale(.7,.7)"  gui_id="Motor_Ma_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,364) scale(.7,.7)"  gui_id="Motor_Mb_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,353) scale(.7,.7)"  gui_id="Motor_Mc_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,342) scale(.7,.7)"  gui_id="Motor_Md_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,331) scale(.7,.7)"  gui_id="Motor_Me_PS2_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(615,330)"  gui_id="Motor_Stop_PS2_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,300)"  gui_id="Motor_PS2_Zone_3" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,260)"  gui_id="Motor_PS2_Zone_4" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,240)"  gui_id="Motor_Mb_PS2_Zone_4" />
 
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,0) scale(1,.7)"  gui_id="Motor_Ma_PS3_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,11) scale(1,.7)"  gui_id="Motor_Mb_PS3_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,22) scale(1,.7)"  gui_id="Motor_Mc_PS3_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,33) scale(1,.7)"  gui_id="Motor_Md_PS3_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,44) scale(1,.7)"  gui_id="Motor_Me_PS3_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,55) scale(1,.7)"  gui_id="Motor_Ma_PS3_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,66) scale(1,.7)"  gui_id="Motor_Mb_PS3_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,77) scale(1,.7)"  gui_id="Motor_Mc_PS3_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,88) scale(1,.7)"  gui_id="Motor_Md_PS3_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,99) scale(1,.7)"  gui_id="Motor_Me_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,0) scale(.7,.7)"  gui_id="Motor_Ma_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,11) scale(.7,.7)"  gui_id="Motor_Mb_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,22) scale(.7,.7)"  gui_id="Motor_Mc_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,33) scale(.7,.7)"  gui_id="Motor_Md_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,44) scale(.7,.7)"  gui_id="Motor_Me_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,55) scale(.7,.7)"  gui_id="Motor_Ma_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,66) scale(.7,.7)"  gui_id="Motor_Mb_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,77) scale(.7,.7)"  gui_id="Motor_Mc_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,88) scale(.7,.7)"  gui_id="Motor_Md_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,99) scale(.7,.7)"  gui_id="Motor_Me_PS3_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(987,108)"  gui_id="Motor_Stop_PS3_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,130)"  gui_id="Motor_PS3_Zone_3" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,170)"  gui_id="Motor_PS3_Zone_4" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,190)"  gui_id="Motor_Mb_PS3_Zone_4" />
 
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,430) scale(1,.7)"  gui_id="Motor_Ma_PS4_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,419) scale(1,.7)"  gui_id="Motor_Mb_PS4_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,408) scale(1,.7)"  gui_id="Motor_Mc_PS4_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,397) scale(1,.7)"  gui_id="Motor_Md_PS4_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,386) scale(1,.7)"  gui_id="Motor_Me_PS4_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,375) scale(1,.7)"  gui_id="Motor_Ma_PS4_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,364) scale(1,.7)"  gui_id="Motor_Mb_PS4_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,353) scale(1,.7)"  gui_id="Motor_Mc_PS4_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,342) scale(1,.7)"  gui_id="Motor_Md_PS4_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,331) scale(1,.7)"  gui_id="Motor_Me_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,430) scale(.7,.7)"  gui_id="Motor_Ma_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,419) scale(.7,.7)"  gui_id="Motor_Mb_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,408) scale(.7,.7)"  gui_id="Motor_Mc_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,397) scale(.7,.7)"  gui_id="Motor_Md_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,386) scale(.7,.7)"  gui_id="Motor_Me_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,375) scale(.7,.7)"  gui_id="Motor_Ma_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,364) scale(.7,.7)"  gui_id="Motor_Mb_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,353) scale(.7,.7)"  gui_id="Motor_Mc_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,342) scale(.7,.7)"  gui_id="Motor_Md_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,331) scale(.7,.7)"  gui_id="Motor_Me_PS4_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1038,330)"  gui_id="Motor_Stop_PS4_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,300)"  gui_id="Motor_PS4_Zone_3" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,260)"  gui_id="Motor_PS4_Zone_4" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,240)"  gui_id="Motor_Mb_PS4_Zone_4" />
 
 
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,0) scale(1,.7)"  gui_id="Motor_Ma_PS5_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,11) scale(1,.7)"  gui_id="Motor_Mb_PS5_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,22) scale(1,.7)"  gui_id="Motor_Mc_PS5_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,33) scale(1,.7)"  gui_id="Motor_Md_PS5_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,44) scale(1,.7)"  gui_id="Motor_Me_PS5_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,55) scale(1,.7)"  gui_id="Motor_Ma_PS5_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,66) scale(1,.7)"  gui_id="Motor_Mb_PS5_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,77) scale(1,.7)"  gui_id="Motor_Mc_PS5_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,88) scale(1,.7)"  gui_id="Motor_Md_PS5_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,99) scale(1,.7)"  gui_id="Motor_Me_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,0) scale(.7,.7)"  gui_id="Motor_Ma_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,11) scale(.7,.7)"  gui_id="Motor_Mb_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,22) scale(.7,.7)"  gui_id="Motor_Mc_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,33) scale(.7,.7)"  gui_id="Motor_Md_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,44) scale(.7,.7)"  gui_id="Motor_Me_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,55) scale(.7,.7)"  gui_id="Motor_Ma_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,66) scale(.7,.7)"  gui_id="Motor_Mb_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,77) scale(.7,.7)"  gui_id="Motor_Mc_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,88) scale(.7,.7)"  gui_id="Motor_Md_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,99) scale(.7,.7)"  gui_id="Motor_Me_PS5_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,108)"  gui_id="Motor_Stop_PS5_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,130)"  gui_id="Motor_PS5_Zone_3" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,170)"  gui_id="Motor_PS5_Zone_4" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,190)"  gui_id="Motor_Mb_PS5_Zone_4" />
 
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,430) scale(1,.7)"  gui_id="Motor_Ma_PS6_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,419) scale(1,.7)"  gui_id="Motor_Mb_PS6_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,408) scale(1,.7)"  gui_id="Motor_Mc_PS6_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,397) scale(1,.7)"  gui_id="Motor_Md_PS6_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,386) scale(1,.7)"  gui_id="Motor_Me_PS6_Zone_1" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,375) scale(1,.7)"  gui_id="Motor_Ma_PS6_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,364) scale(1,.7)"  gui_id="Motor_Mb_PS6_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,353) scale(1,.7)"  gui_id="Motor_Mc_PS6_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,342) scale(1,.7)"  gui_id="Motor_Md_PS6_Zone_2" />
-  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,331) scale(1,.7)"  gui_id="Motor_Me_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,430) scale(.7,.7)"  gui_id="Motor_Ma_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,419) scale(.7,.7)"  gui_id="Motor_Mb_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,408) scale(.7,.7)"  gui_id="Motor_Mc_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,397) scale(.7,.7)"  gui_id="Motor_Md_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,386) scale(.7,.7)"  gui_id="Motor_Me_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,375) scale(.7,.7)"  gui_id="Motor_Ma_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,364) scale(.7,.7)"  gui_id="Motor_Mb_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,353) scale(.7,.7)"  gui_id="Motor_Mc_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,342) scale(.7,.7)"  gui_id="Motor_Md_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,331) scale(.7,.7)"  gui_id="Motor_Me_PS6_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1367,330)"  gui_id="Motor_Stop_PS6_Zone_2" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,300)"  gui_id="Motor_PS6_Zone_3" />
   <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,260)"  gui_id="Motor_PS6_Zone_4" />
