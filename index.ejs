@@ -5,27 +5,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>SinglePack</title>
-        <link rel="stylesheet" type="text/css" href="./theme/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./theme/css/iconfont.css">
-        <link rel="stylesheet" type="text/css" href="./theme/css/icons_feather.min.css">
-        <link rel="stylesheet" type="text/css" href="./theme/css/palette-gradient.min.css">
-        <link rel="stylesheet" type="text/css" href="./theme/bootstrap-icons/bootstrap-icons.css">
-        <link rel="stylesheet" type="text/css" href="./theme/js/datepicker/bootstrap-datepicker.min.css">
-        <link rel="stylesheet" type="text/css" href="./theme/js/datatables/datatables.css">
-        <link rel="stylesheet" type="text/css" href="./theme/css/style.css">
+        <link rel="stylesheet" type="text/css" href="<%= system_base_path %>/theme/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="<%= system_base_path %>/theme/css/iconfont.css">
+        <link rel="stylesheet" type="text/css" href="<%= system_base_path %>/theme/css/icons_feather.min.css">
+        <link rel="stylesheet" type="text/css" href="<%= system_base_path %>/theme/css/palette-gradient.min.css">
+        <link rel="stylesheet" type="text/css" href="<%= system_base_path %>/theme/bootstrap-icons/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="<%= system_base_path %>/theme/js/datepicker/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="<%= system_base_path %>/theme/js/datatables/datatables.css">
+        <link rel="stylesheet" type="text/css" href="<%= system_base_path %>/theme/css/style.css">
     </head>
     <body class="container-fluid">
 
     <script>window.$ = window.jQuery = require('jquery');</script>
-    <script type="text/javascript" src="./theme/js/popper.min.js"></script>
-    <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./theme/js/moment.min.js"></script>
-    <script type="text/javascript" src="./theme/js/datepicker/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="./theme/js/datatables/datatables.js"></script>
-    <script type="text/javascript" src="./theme/js/jquery.newsTicker.js"></script>
+    <script type="text/javascript" src="<%= system_base_path %>/theme/js/popper.min.js"></script>
+    <script type="text/javascript" src="<%= system_base_path %>/theme/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<%= system_base_path %>/theme/js/moment.min.js"></script>
+    <script type="text/javascript" src="<%= system_base_path %>/theme/js/datepicker/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="<%= system_base_path %>/theme/js/datatables/datatables.js"></script>
+    <script type="text/javascript" src="<%= system_base_path %>/theme/js/jquery.newsTicker.js"></script>
 
-    <script type="text/javascript" src="./theme/js/site_info.js"></script>
-    <script type="text/javascript" src="./theme/js/global.js"></script>
+    <script type="text/javascript" src="<%= system_base_path %>/theme/js/site_info.js"></script>
+    <script type="text/javascript" src="<%= system_base_path %>/theme/js/global.js"></script>
     <header id="header">
         <div class="row">
             <div class="position-relative col-12"  style="width: 100%;height: 60px;">
@@ -77,6 +77,6 @@
             </div>
         </div>
     </header>
-    <div id="system_content"><%- include('./pages/'+system_current_page_file) %></div>
+    <div id="system_content"><%- include(system_base_path+'/pages/'+system_current_page_file) %></div>
     </body>
 </html>

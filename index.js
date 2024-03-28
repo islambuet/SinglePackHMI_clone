@@ -48,6 +48,7 @@ let basic_info={
     'currentMenu':generalPage,
     'selectedMachineId':0,
     'pageParams':{},
+    'basePath':__dirname,
     'hmiSettings':getHMISettings()
 }
 
@@ -120,6 +121,7 @@ const createWindow = () => {
     });
     ejse.data('system_general_layout_no',basic_info['hmiSettings']['general_layout_no'])
     ejse.data('system_current_page_file',basic_info['currentMenu']['file'])
+    ejse.data('system_base_path',basic_info['basePath'])
     mainWindow.loadFile('index.ejs').then(function (){ connectWithServer()});
 };
 function changeMenu(params){
