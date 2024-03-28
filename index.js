@@ -52,7 +52,7 @@ let basic_info={
     'hmiSettings':getHMISettings()
 }
 
-let mainWindow;
+let mainWindow,legendWindow,motorDetailsWindow;
 function getMenu(){
     let menuItems=[];
     menuItems[0]={
@@ -102,7 +102,7 @@ function getMenu(){
 let menu = Menu.buildFromTemplate(getMenu())
 Menu.setApplicationMenu(menu)
 
-const createWindow = () => {
+const createMainWindow = () => {
     //creating new window
     mainWindow = new BrowserWindow({
         width: 1920,
@@ -123,6 +123,32 @@ const createWindow = () => {
     ejse.data('system_current_page_file',basic_info['currentMenu']['file'])
     ejse.data('system_base_path',basic_info['basePath'])
     mainWindow.loadFile('index.ejs').then(function (){ connectWithServer()});
+};
+const createLegendWindow = () => {
+    //creating new window
+    legendWindow = new BrowserWindow({
+        parent: mainWindow,
+        width: 800,
+        height: 180,
+        resizable: !app.isPackaged,
+        minimizable:false,
+        movable:true,
+        closable:true,
+    });
+    if(!app.isPackaged){
+        legendWindow.setMenu( Menu.buildFromTemplate( [
+            { role: 'toggleDevTools' },
+        ]));
+    }
+    else{
+        legendWindow.setMenu(null)
+    }
+    legendWindow.on('close', (event)=>{
+        event.preventDefault();
+        legendWindow.hide();
+    })
+    legendWindow.setTitle('Legend');
+    legendWindow.loadFile(basic_info['basePath']+'/components/general/general_colors.svg');
 };
 function changeMenu(params){
     console.log(params)
@@ -153,26 +179,14 @@ ipcMain.on("sendRequestToIpcMain", function(e, responseName,params={}) {
         changeMenu(params)
     }
     else if(responseName=='showChildWindow'){
-        const child = new BrowserWindow({
-            parent: mainWindow,
-            width: 800,
-            height: 180,
-            resizable: !app.isPackaged,
-            minimizable:false,
-            movable:true,
-            closable:true,
+        if(params['name']=='legend'){
+            if(!legendWindow){
+                createLegendWindow();
+            }
+            legendWindow.show()
+            legendWindow.center();
+        }
 
-        })
-        if(!app.isPackaged){
-            child.setMenu( Menu.buildFromTemplate( [
-                { role: 'toggleDevTools' },
-            ]));
-        }
-        else{
-            child.setMenu(null)
-        }
-        child.loadFile('components/general/general_colors.svg')
-        child.show()
     }
     else if(responseName=='logout'){
         logoutUser();
@@ -334,7 +348,7 @@ ipcMain.on("sendRequestToServer", function(e, responseName,params,requestData=[]
     sendRequestToServer({"request" :responseName,'params':params,"requestData":requestData});
 })
 app.whenReady().then(() => {
-    createWindow()
+    createMainWindow()
 })
 app.on('window-all-closed', () => {
     let params={
