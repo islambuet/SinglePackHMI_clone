@@ -4,11 +4,23 @@
 // ---------------
 /* global basic_info */
 /* global ipcRenderer */
+/* global secondsToDhms */
 
 let motorIdForDetailsView=0;
 let machine_mode=0;
 
 /*Labels*/
+function setActiveAlarmSettings(){
+    let hmiSettings= basic_info['hmiSettings']
+    if(hmiSettings['alarm_show_details'] ==1){
+        $('#table_active_alarms').show()
+        $('#container_ticker_active_alarms').hide()
+    }
+    else{
+        $('#table_active_alarms').hide()
+        $('#container_ticker_active_alarms').show()
+    }
+}
 function setConveyorsLabel(){
     let conveyors=basic_info['conveyors'];
     if(conveyors!=undefined){
@@ -163,6 +175,68 @@ $(document).on('click','#motor-details  #button-motor-stop',function (event){
     }
 })
 /*States*/
+
+let ticker_active_alarms = $('#ticker_active_alarms').newsTicker({
+    row_height: 100,
+    max_rows: 2,
+    duration: 4000,
+    pauseOnHover: 0
+});
+let ticker_data_current = []
+function setActiveAlarms(active_alarms){
+    let alarms=basic_info['alarms']
+    let machine_id=basic_info['selectedMachineId'];
+    let now_timestamp=moment().unix();
+    let alarm_class_names = {"0" : "Error", "1" : "Warning", "2" : "Message"};
+    $("#table_active_alarms tbody").empty();
+    let tickers_data_new = [];
+    if(active_alarms.length>0){
+        for(let i=0;(i<active_alarms.length && i<5);i++){
+            let key=machine_id+'_'+active_alarms[i]['alarm_id']+'_'+active_alarms[i]['alarm_type'];
+            if(alarms[key]!=undefined) {
+                let html = '<tr>' +
+                    '<td>' + moment.unix(active_alarms[i]['date_active_timestamp']).format("MMM D Y, H:mm:ss") + '</td>' +
+                    '<td>' + secondsToDhms(now_timestamp-active_alarms[i]['date_active_timestamp']) + '</td>' +
+                    '<td>' + alarm_class_names[alarms[key]['alarm_class']] + '</td>' +
+                    '<td>' + alarms[key]['location'] + '</td>' +
+                    '<td>' + alarms[key]['description'] + '</td>' +
+                    '<td>' + alarms[key]['variable_name'] + '</td>' +
+                    '</tr>';
+                $("#table_active_alarms tbody").append(html);
+                tickers_data_new.push(alarms[key]['description']);
+            }
+        }
+    }
+    let ticker_data_count = tickers_data_new.length;
+    if(ticker_data_count>0){
+        if(tickers_data_new.sort().join(',') !== ticker_data_current.sort().join(',')){
+            $('#ticker_active_alarms').empty();
+            ticker_active_alarms.newsTicker('pause');
+            ticker_data_current=tickers_data_new;
+            if(ticker_data_count == 1){
+                let html = '<li class="ticker-single-item">' + ticker_data_current[0] + '</li>';
+                $("#ticker_active_alarms").append(html);
+            }
+            else {
+                ticker_data_current.forEach(elem => {
+                    let html = '<li>' + elem + '</li>';
+                    $("#ticker_active_alarms").append(html);
+                });
+                if(ticker_data_count>2){
+                    ticker_active_alarms.newsTicker('unpause');
+                }
+            }
+        }
+    }
+    else{
+        ticker_data_current=[]
+        $('#ticker_active_alarms').empty();
+        ticker_active_alarms.newsTicker('pause');
+
+        let html = '<tr><td colspan="6">No active alarm to display</td></tr>';
+        $("#table_active_alarms tbody").append(html);
+    }
+}
 function setConveyorsStates(conveyor_states){
     let conveyor_colors = { "0" : "#ccc",  "1" : "#27e22b", "2" : "#ffc000", "3" : "red","4":"#87cefa"};
     for(let key in conveyor_states){
@@ -308,17 +382,7 @@ $('.bin.cursor-pointer').on('click',function (){
 
 
 })
-function setActiveAlarmSettings(){
-    let hmiSettings= basic_info['hmiSettings']
-    if(hmiSettings['detailed_active_alarm'] ==1){
-        $('#table_active_alarms').show()
-        $('#container_ticker_active_alarms').hide()
-    }
-    else{
-        $('#table_active_alarms').hide()
-        $('#container_ticker_active_alarms').show()
-    }
-}
+
 function setBinsLabel(){
     let bins=basic_info['bins']
     let layoutNo=basic_info['hmiSettings']['general_layout_no']
@@ -375,68 +439,7 @@ function setTestButtonsStatus(outputStates){
         $("#btn-test-blue-light").attr('data-started',1).css('background-color',$("#btn-test-blue-light").attr('data-started-color'));
     }
 }
-/* global secondsToDhms */
-let ticker_active_alarms = $('#ticker_active_alarms').newsTicker({
-    row_height: 100,
-    max_rows: 2,
-    duration: 4000,
-    pauseOnHover: 0
-});
-let ticker_data_current = []
-function setActiveAlarms(active_alarms){
-    let alarms=basic_info['alarms']
-    let machine_id=basic_info['selectedMachineId'];
-    let now_timestamp=moment().unix();
-    let alarm_class_names = {"0" : "Error", "1" : "Warning", "2" : "Message"};
-    $("#table_active_alarms tbody").empty();
-    let tickers_data_new = [];
-    if(active_alarms.length>0){
-        for(let i=0;(i<active_alarms.length && i<5);i++){
-            let key=machine_id+'_'+active_alarms[i]['alarm_id']+'_'+active_alarms[i]['alarm_type'];
-            if(alarms[key]!=undefined) {
-                let html = '<tr>' +
-                    '<td>' + moment.unix(active_alarms[i]['date_active_timestamp']).format("MMM D Y, H:mm:ss") + '</td>' +
-                    '<td>' + secondsToDhms(now_timestamp-active_alarms[i]['date_active_timestamp']) + '</td>' +
-                    '<td>' + alarm_class_names[alarms[key]['alarm_class']] + '</td>' +
-                    '<td>' + alarms[key]['location'] + '</td>' +
-                    '<td>' + alarms[key]['description'] + '</td>' +
-                    '<td>' + alarms[key]['variable_name'] + '</td>' +
-                    '</tr>';
-                $("#table_active_alarms tbody").append(html);
-                tickers_data_new.push(alarms[key]['description']);
-            }
-        }
-    }
-    let ticker_data_count = tickers_data_new.length;
-    if(ticker_data_count>0){
-        if(tickers_data_new.sort().join(',') !== ticker_data_current.sort().join(',')){
-            $('#ticker_active_alarms').empty();
-            ticker_active_alarms.newsTicker('pause');
-            ticker_data_current=tickers_data_new;
-            if(ticker_data_count == 1){
-                let html = '<li class="ticker-single-item">' + ticker_data_current[0] + '</li>';
-                $("#ticker_active_alarms").append(html);
-            }
-            else {
-                ticker_data_current.forEach(elem => {
-                    let html = '<li>' + elem + '</li>';
-                    $("#ticker_active_alarms").append(html);
-                });
-                if(ticker_data_count>2){
-                    ticker_active_alarms.newsTicker('unpause');
-                }
-            }
-        }
-    }
-    else{
-        ticker_data_current=[]
-        $('#ticker_active_alarms').empty();
-        ticker_active_alarms.newsTicker('pause');
 
-        let html = '<tr><td colspan="6">No active alarm to display</td></tr>';
-        $("#table_active_alarms tbody").append(html);
-    }
-}
 function setBinsStates(bin_states){
     let bin_state_colors=basic_info['bin_state_colors'];
     for(let bin_key in bin_states){

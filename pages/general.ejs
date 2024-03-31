@@ -26,6 +26,7 @@
     function systemPageLoaded(){
         if(basic_info['connected']){
             $('[data-toggle="tooltip"]').tooltip();
+            setActiveAlarmSettings();//general_functions
             setConveyorsLabel();//general_functions
             setInputsLabel();//general_functions
             setDevicesLabel();//general_functions
@@ -47,6 +48,7 @@
         ipcRenderer.send("sendRequestToServer", "getGeneralViewData",{},requestData);
     }
     ipcRenderer.on("getGeneralViewData", function(e, jsonObject) {
+        setActiveAlarms(jsonObject['data']['alarms_active']);//general_functions
         setConveyorsStates(jsonObject['data']['conveyors_states']);//general_functions
         setInputsStates(jsonObject['data']['inputs_states']);//general_functions
         setDevicesStates(jsonObject['data']['devices_states']);//general_functions
