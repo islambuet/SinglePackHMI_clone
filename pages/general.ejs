@@ -6,6 +6,9 @@
 <div class="row">
     <div class="col-12">
         <%- include(system_base_path+'/components/general/'+system_general_layout_no+'/general.svg') %>
+        <div id="motor-details" class="position-absolute" style="width: 350px;height:225px;top:200px;left:750px; border: 2px solid #2780E3;border-radius: 10px;display: none;z-index: 2;background-color: white;">
+            <%- include(system_base_path+'/components/general/general_motor_details') %>
+        </div>
     </div>
 </div>
 <div class="row m-0">
@@ -34,9 +37,12 @@
     }
     function requestPageData(){
         let requestData=[
+            {'name':'alarms_active','params':{}},
             {'name':'inputs_states','params':{}},
             {'name':'conveyors_states','params':{}},
             {'name':'devices_states','params':{}},
+            {'name':'motors_current_speed','params':{}},
+            {'name':'machine_mode','params':{}},
         ];
         ipcRenderer.send("sendRequestToServer", "getGeneralViewData",{},requestData);
     }
@@ -44,5 +50,6 @@
         setConveyorsStates(jsonObject['data']['conveyors_states']);//general_functions
         setInputsStates(jsonObject['data']['inputs_states']);//general_functions
         setDevicesStates(jsonObject['data']['devices_states']);//general_functions
+        setMotorsStates(jsonObject['data']);//general_functions
     })
 </script>
