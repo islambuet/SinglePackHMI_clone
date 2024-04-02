@@ -112,6 +112,13 @@ $(document).on('click','#btn_toggle_legend',function (event){
     //window.open('components/general/general_colors.svg', '_blank', 'top=0,left=0')
     ipcRenderer.send("sendRequestToIpcMain", "showChildWindow",{'name':'legend'});
 })
+$(document).on('click','.conveyor[motor_zone]',function (event){
+    let motor_zone=$(this).attr('motor_zone');
+    $('#motor_zone_'+motor_zone).show();
+})
+$(document).on('click','.motor_zone_close',function (event){
+    $('.motor_zone').hide();
+})
 $(document).on('click','#motor-details #close',function (event){
     $('#motor-details').hide();
 })

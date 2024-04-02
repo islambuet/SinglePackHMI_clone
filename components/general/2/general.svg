@@ -18,7 +18,7 @@
       .conveyor, .photoeye, .estop, .proximity, .device , .motor {
       display:none;
       }
-      .motor[clickable="1"] {
+      .motor[clickable="1"],.conveyor[motor_zone]  {
         cursor:pointer;
       }
     </style>
@@ -65,7 +65,7 @@
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(595,210)" gui_id="10" />
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(648,210)" gui_id="11" />
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(701,210)" gui_id="12" />
-  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,210)" gui_id="13" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,210)" gui_id="13" motor_zone="13"/>
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(805,210)" gui_id="14" />
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(858,210)" gui_id="15" />
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(910,210)" gui_id="16" />
@@ -80,21 +80,21 @@
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1411,210)" gui_id="25" />
 
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="43" transform="translate(753,246)" gui_id="26" />
-  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,301)" gui_id="27" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,301)" gui_id="27" motor_zone="R2"/>
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(701,301)" gui_id="28" />
-  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(655,301)" gui_id="29" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(655,301)" gui_id="29" motor_zone="R4"/>
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(657,254)" gui_id="30" />
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(804,301)" gui_id="31" />
-  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="95" height="25" transform="translate(859,301)" gui_id="32" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="95" height="25" transform="translate(859,301)" gui_id="32" motor_zone="R8"/>
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="43" transform="translate(912,246)" gui_id="33" />
 
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="38" transform="translate(753,155)" gui_id="34" />
-  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,120)" gui_id="35" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,120)" gui_id="35" motor_zone="L2"/>
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(806,120)" gui_id="36" />
-  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(861,120)" gui_id="37" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(861,120)" gui_id="37" motor_zone="L4"/>
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(861,155)" gui_id="38" />
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(692,120)" gui_id="39" />
-  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="75" height="25" transform="translate(603,120)" gui_id="40" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="75" height="25" transform="translate(603,120)" gui_id="40" motor_zone="L8"/>
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(603,155)" gui_id="41" />
 
   <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(521,0)" gui_id="42" />
