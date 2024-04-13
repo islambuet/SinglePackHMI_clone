@@ -93,7 +93,7 @@ $(document).on('click','.button-device-command-press-release',function (event){
             'command':command_end,
             'parameter1':parameter1
         };
-        ipcRenderer.send("sendRequestToServer", "forward_ape_message",params,[]);
+        ipcRenderer.send("sendRequestToServer", "forwardSMMessage",params,[]);
         $(this).attr('data-started',0);
         $(this).css('background-color',stoppedColor);
     }
@@ -104,7 +104,7 @@ $(document).on('click','.button-device-command-press-release',function (event){
             'command':command_start,
             'parameter1':parameter1
         };
-        ipcRenderer.send("sendRequestToServer", "forward_ape_message",params,[]);
+        ipcRenderer.send("sendRequestToServer", "forwardSMMessage",params,[]);
         $(this).attr('data-started',1);
         $(this).css('background-color',startedColor);
     }

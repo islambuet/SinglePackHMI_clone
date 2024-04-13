@@ -356,6 +356,6 @@ app.on('window-all-closed', () => {
         'message_id':120,
         'mode':0
     };
-    sendRequestToServer({"request" :'forward_ape_message','params':params,"requestData":[]});
+    sendRequestToServer({"request" :'forwardSMMessage','params':params,"requestData":[]});
     app.exit()
 })
