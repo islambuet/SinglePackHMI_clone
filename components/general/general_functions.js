@@ -39,6 +39,7 @@ function setInputsLabel(){
             if(record['gui_id']){
                 if(record['input_type']==0){
                     $('.photoeye[gui_id="'+record['gui_id']+'"]').attr('input_id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
+                    $('.proximity[gui_id="'+record['gui_id']+'"]').attr('input_id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
                 }
                 else if(record['input_type']==3){
                     $('.estop[gui_id="'+record['gui_id']+'"]').attr('input_id',record['input_id']).attr('data-original-title',record['electrical_name']+'<br>'+record['description']).show();
@@ -265,6 +266,7 @@ function setInputsStates(input_states){
         if(input['gui_id']){
             if(input['input_type']==0){
                 $('.photoeye[input_id='+input["input_id"]+']').css('fill',photoeye_colors[state]);
+                $('.proximity[input_id='+input["input_id"]+']').css('fill',proximity_colors[state]);
             }
             else if(input['input_type']==3){
                 $('.estop[input_id='+input["input_id"]+']').css('fill',estop_colors[state]);
