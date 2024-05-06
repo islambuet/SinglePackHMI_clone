@@ -128,7 +128,7 @@
 
   <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(582,50)"  gui_id="PS1_E-STOP_ZONE_OPEN" />
   <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1010,50)"  gui_id="PS3_E-STOP_ZONE_OPEN" />
-  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1335,50)"  gui_id="PS4_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1335,50)"  gui_id="PS5_E-STOP_ZONE_OPEN" />
   <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(636,390)"  gui_id="PS2_E-STOP_ZONE_OPEN" />
   <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1060,390)"  gui_id="PS4_E-STOP_ZONE_OPEN" />
   <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1390,390)"  gui_id="PS6_E-STOP_ZONE_OPEN" />
