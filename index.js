@@ -34,9 +34,14 @@ function getHMISettings(){
         'cm_ip_address' :  store.get(project_prefix+'cm_ip_address', ''),
         'alarm_show_details' : store.get(project_prefix+'alarm_show_details', '0'),
         'motor_speed_unit' : store.get(project_prefix+'motor_speed_unit', 'm_s'),
-        'general_layout_no' : store.get(project_prefix+'general_layout_no', '1'),
-        'general_show_production' : store.get(project_prefix+'general_show_production', '1'),
-        'statistics_show_pie' : store.get(project_prefix+'statistics_show_pie', '1')
+        'general_layout_no' : store.get(project_prefix+'general_layout_no', '2'),
+        'btn_toggle_bg' : store.get(project_prefix+'btn_toggle_bg', '1'),
+        'btn_toggle_conveyors' : store.get(project_prefix+'btn_toggle_conveyors', '1'),
+        'btn_toggle_devices' : store.get(project_prefix+'btn_toggle_devices', '1'),
+        'btn_toggle_estop' : store.get(project_prefix+'btn_toggle_estop', '1'),
+        'btn_toggle_photoeyes' : store.get(project_prefix+'btn_toggle_photoeyes', '1'),
+        'btn_toggle_proximity' : store.get(project_prefix+'btn_toggle_proximity', '1'),
+        'btn_toggle_motors' : store.get(project_prefix+'btn_toggle_motors', '1')
     };
 }
 let unRegisteredUser={'id':0,'name':'Amazon Operator','role':0};

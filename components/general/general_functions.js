@@ -86,28 +86,63 @@ function setMotorDetailsView(){
         $('#motor-details').css('height','225px');
     }
 }
-
-
+function setButtonsToggleStatus(){
+    console.log(basic_info['hmiSettings'])
+    if(basic_info['hmiSettings']['btn_toggle_bg']=='0'){
+        $('#btn_toggle_bg').trigger('click');
+    }
+    if(basic_info['hmiSettings']['btn_toggle_conveyors']=='0'){
+        $('#btn_toggle_conveyors').trigger('click');
+    }
+    if(basic_info['hmiSettings']['btn_toggle_devices']=='0'){
+        $('#btn_toggle_devices').trigger('click');
+    }
+    if(basic_info['hmiSettings']['btn_toggle_estop']=='0'){
+        $('#btn_toggle_estop').trigger('click');
+    }
+    if(basic_info['hmiSettings']['btn_toggle_photoeyes']=='0'){
+        $('#btn_toggle_photoeyes').trigger('click');
+    }
+    if(basic_info['hmiSettings']['btn_toggle_proximity']=='0'){
+        $('#btn_toggle_proximity').trigger('click');
+    }
+    if(basic_info['hmiSettings']['btn_toggle_motors']=='0'){
+        $('#btn_toggle_motors').trigger('click');
+    }
+}
+function changeToggleButtonState(button_id,elements,setting_var){
+    let state=$(button_id).attr('data-state');
+    if(state==1){
+        $(button_id).attr('data-state',0).css('background-color',"#6c757d");
+        elements.hide();
+        ipcRenderer.send("sendRequestToIpcMain", "saveSettings",{[setting_var]:0});
+    }
+    else{
+        $(button_id).attr('data-state',1).css('background-color',"");
+        elements.show();
+        ipcRenderer.send("sendRequestToIpcMain", "saveSettings",{[setting_var]:1});
+    }
+}
 $(document).on('click','#btn_toggle_bg',function (event){
-    $('#bg_image').toggle();
+    changeToggleButtonState('#btn_toggle_bg',$('#bg_image'),'btn_toggle_bg');
 })
 $(document).on('click','#btn_toggle_conveyors',function (event){
-    $('.conveyor').not('[conveyor_id=0]').toggle();
+    changeToggleButtonState('#btn_toggle_conveyors',$('.conveyor').not('[conveyor_id=0]'),'btn_toggle_conveyors');
 })
 $(document).on('click','#btn_toggle_devices',function (event){
-    $('.device').not('[device_id=0]').toggle();
+    changeToggleButtonState('#btn_toggle_devices',$('.device').not('[device_id=0]'),'btn_toggle_devices');
 })
 $(document).on('click','#btn_toggle_estop',function (event){
-    $('.estop').not('[input_id=0]').toggle();
+    changeToggleButtonState('#btn_toggle_estop',$('.estop').not('[input_id=0]'),'btn_toggle_estop')
 })
 $(document).on('click','#btn_toggle_photoeyes',function (event){
-    $('.photoeye').not('[input_id=0]').toggle();
+    changeToggleButtonState('#btn_toggle_photoeyes',$('.photoeye').not('[input_id=0]'),'btn_toggle_photoeyes')
 })
 $(document).on('click','#btn_toggle_proximity',function (event){
-    $('.proximity').not('[input_id=0]').toggle();
+    changeToggleButtonState('#btn_toggle_proximity',$('.proximity').not('[input_id=0]'),'btn_toggle_proximity')
 })
 $(document).on('click','#btn_toggle_motors',function (event){
-    $('.motor').not('[motor_id=0]').toggle();
+    changeToggleButtonState('#btn_toggle_motors',$('.motor').not('[motor_id=0]'),'btn_toggle_motors')
 })
 $(document).on('click','#btn_toggle_legend',function (event){
     //window.open('components/general/general_colors.svg', '_blank', 'top=0,left=0')
