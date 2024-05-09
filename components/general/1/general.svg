@@ -1,105 +1,548 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="svg_general" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1624 1125">
+<svg id="svg_general" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1476 461">
   <defs>
     <style>
-      .conveyor-fill{
-      fill:#e6e7e8;
-      }
-      .photoeye-fill{
-      fill:#CCC;
-      }
-      .bin-fill{
-      fill: #e6e7e8;
-      }
-      .conveyor, .conveyor-bg, .bin, .photoeye{
-
-      }
-      .conveyor .status{
+      .conveyor{
       fill: transparent;
       stroke-width:2;
-      stroke:#ccc;
+      stroke:#e6e7e8;
+      rx:4;
+      ry:4;
       }
-      .cursor-pointer {
-      cursor:pointer;
+      .photoeye{
+      fill:#CCC;
+      }
+      .device, .motor{
+      fill:#e6e6e6;
+      }
+      .conveyor, .photoeye, .estop, .proximity, .device , .motor {
+      display:none;
+      }
+      .motor[clickable="1"],.conveyor[motor_zone]  {
+        cursor:pointer;
       }
     </style>
+    <g id="estop">
+      <rect  x="0" y="0" width="15.5" height="15.5" style="fill:#f5ea14;stroke:#ff0000;stroke-width:1px;"/>
+      <circle class="status" cx="7.75" cy="7.75" r="5" style="stroke:black;"/>
+    </g>
     <g id="photoeye">
-      <polygon class="photoeye-fill status" points="12 6 0 0 0 12 12 6" style="fill: rgb(57, 181, 74);"></polygon>
-      <rect class="photoeye-fill status" x="14" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
-      <rect class="photoeye-fill status" x="22" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
-      <rect class="photoeye-fill status" x="30" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
-      <rect class="photoeye-fill status" x="38" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
-      <rect class="photoeye-fill status" x="46" y="5" width="3.2" height="3.2" style="fill: rgb(57, 181, 74);"></rect>
-      <rect class="photoeye-fill status" x="54" y="0" width="3.6" height="12" style="fill: rgb(57, 181, 74);"></rect>
+      <polygon points="12 6 0 0 0 12 12 6"></polygon>
+      <rect x="14" y="5" width="3.2" height="3.2"></rect>
+      <rect x="22" y="5" width="3.2" height="3.2"></rect>
+      <rect x="30" y="5" width="3.2" height="3.2"></rect>
+      <rect x="38" y="5" width="3.2" height="3.2"></rect>
+      <rect x="46" y="5" width="3.2" height="3.2"></rect>
+      <rect x="54" y="0" width="3.6" height="12"></rect>
+    </g>
+    <g id="proximity">
+      <circle cx="7" cy="7" r="6" style="stroke:black;"/>
+      <line x1="1" y1="7" x2="7" y2="1" style="stroke:black;fill:black;" />
+      <line x1="3" y1="11" x2="11" y2="3" style="stroke:black;fill:black;" />
+      <line x1="7" y1="13" x2="13" y2="7" style="stroke:black;fill:black;" />
+    </g>
+    <g id="device">
+      <rect x="0" y="0" width="15" height="8" style="stroke:black;" />
+      <polygon points="0 8  15 8 15 0" style="fill:black;" ></polygon>
+    </g>
+    <g id="motor">
+      <circle cx="7" cy="7" r="6" style="stroke:black;"/>
+      <path transform="translate(-3,7) rotate(-45)" d="M1,7 a6 6 0 0 0 12 0 L1,7" style="stroke:black;fill:black;" />
     </g>
   </defs>
-  <image href="components/general/asd.png"/>
-  <use xlink:href="#photoeye" transform="translate(34 201)" class="photoeye" gui-input-id="1" input-id="1" data-toggle="tooltip" data-html="true" title="Shaiful" />
-  <use xlink:href="#photoeye" transform="translate(34 232)" class="photoeye" gui-input-id="2" input-id="2" data-toggle="tooltip" data-html="true" title="Sunan" />
-  <use xlink:href="#photoeye" transform="translate(34 263)" class="photoeye" gui-input-id="3" input-id="3" data-toggle="tooltip" data-html="true" title="Soriful" />
-  <use xlink:href="#photoeye" transform="translate(34 294)" class="photoeye" gui-input-id="4" input-id="4" data-toggle="tooltip" data-html="true" title="" />
 
-  <g transform="translate(237,584)" class="conveyor" gui-conveyor-id="4" conveyor-id="7" data-toggle="tooltip" data-html="true" title="">
-    <polygon points="0,0 0,45 254,45 254,10 34,10" class="status" />
-  </g>
-  <g transform="translate(237,479)" class="conveyor" gui-conveyor-id="3" conveyor-id="8" data-toggle="tooltip" data-html="true" title="">
-    <polygon points="0,0 0,45 254,45 254,10 34,10" class="status" />
-  </g>
+  <image transform="translate(20,0)" id="bg_image" href="components/general/<%= system_general_layout_no %>/bg.png"/>
 
-  <g transform="translate(200,638)" class="conveyor" gui-conveyor-id="2" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="100" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(200,581)" class="conveyor" gui-conveyor-id="2" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="50" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(200,534)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="40" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(200,479)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="50" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(200,430)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="40" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(200,227)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="196" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(200,180)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="40" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(237,172) scale(-1,-1)" class="conveyor" gui-conveyor-id="10" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <path class="status" d="M67.23,29.05v38.18C30.1,67.23,0,37.13,0,0H38.18c0,16.04,13,29.05,29.05,29.05Z"></path>
-  </g>
-  <g transform="translate(120,105)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="40" height="34" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(45,172) scale(1,-1)" class="conveyor" gui-conveyor-id="10" conveyor-id="0" data-toggle="tooltip" data-html="true" title="">
-    <path class="status" d="M67.23,29.05v38.18C30.1,67.23,0,37.13,0,0H38.18c0,16.04,13,29.05,29.05,29.05Z"></path>
-  </g>
-  <g transform="translate(47,180)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="24" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(47,211)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="24" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(47,242)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="24" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(47,273)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="24" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(47,304)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="60" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(36,371)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="56" height="163" rx="4" ry="4" class="status"/>
-  </g>
-  <g transform="translate(47,541)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="60" rx="4" ry="4" class="status"/>
-  </g>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="72" height="25" transform="translate(50,210)" gui_id="Zone_1" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="60" height="25" transform="translate(128,210)" gui_id="Zone_2" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(194,210)" gui_id="Zone_3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(257,210)" gui_id="Zone_4" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(320,210)" gui_id="Zone_5" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(373,210)" gui_id="Zone_6" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(425,210)" gui_id="Zone_7" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(478,210)" gui_id="Zone_8" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="59" height="25" transform="translate(530,210)" gui_id="Zone_9" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(595,210)" gui_id="Zone_10" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(648,210)" gui_id="Zone_11" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(701,210)" gui_id="Zone_12" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,210)" gui_id="Zone_13" motor_zone="13"/>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(805,210)" gui_id="Zone_14" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(858,210)" gui_id="Zone_15" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(910,210)" gui_id="Zone_16" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(962,210)" gui_id="Zone_17" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1025,210)" gui_id="Zone_18" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1078,210)" gui_id="Zone_19" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="39" height="25" transform="translate(1131,210)" gui_id="Zone_20" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1176,210)" gui_id="Zone_21" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1229,210)" gui_id="Zone_22" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="70" height="25" transform="translate(1282,210)" gui_id="Zone_23" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1358,210)" gui_id="Zone_24" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(1411,210)" gui_id="Zone_25" />
 
-  <g transform="translate(47,608)" class="conveyor" gui-conveyor-id="10" conveyor-id="1" data-toggle="tooltip" data-html="true" title="">
-    <rect width="34" height="184" rx="4" ry="4" class="status"/>
-  </g>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="43" transform="translate(753,246)" gui_id="Zone_R1" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,301)" gui_id="Zone_R2" motor_zone="R2"/>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(701,301)" gui_id="Zone_R3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(655,301)" gui_id="Zone_R4" motor_zone="R4"/>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(657,254)" gui_id="Zone_R5" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(804,301)" gui_id="Zone_R6" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="95" height="25" transform="translate(859,301)" gui_id="Zone_R8" motor_zone="R8"/>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="42" height="43" transform="translate(912,246)" gui_id="Zone_R9" />
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="38" transform="translate(753,155)" gui_id="Zone_L1" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="46" height="25" transform="translate(753,120)" gui_id="Zone_L2" motor_zone="L2"/>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="47" height="25" transform="translate(806,120)" gui_id="Zone_L3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="25" transform="translate(861,120)" gui_id="Zone_L4" motor_zone="L4"/>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(861,155)" gui_id="Zone_L5" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="57" height="25" transform="translate(692,120)" gui_id="Zone_L6" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="75" height="25" transform="translate(603,120)" gui_id="Zone_L8" motor_zone="L8"/>
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="35" height="38" transform="translate(603,155)" gui_id="Zone_L9" />
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(521,0)" gui_id="PS1_Zone_2" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(521,120)" gui_id="PS1_Zone_3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(521,162)" gui_id="PS1_Zone_4" />
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(575,331)" gui_id="PS2_Zone_2" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(575,290)" gui_id="PS2_Zone_3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(575,248)" gui_id="PS2_Zone_4" />
+
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(945,0)" gui_id="PS3_Zone_2" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(945,120)" gui_id="PS3_Zone_3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(945,162)" gui_id="PS3_Zone_4" />
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(998,331)" gui_id="PS4_Zone_2" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(998,290)" gui_id="PS4_Zone_3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(998,248)" gui_id="PS4_Zone_4" />
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1273,0)" gui_id="PS5_Zone_2" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="36" transform="translate(1273,120)" gui_id="PS5_Zone_3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1273,162)" gui_id="PS5_Zone_4" />
+
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1327,248)" gui_id="PS6_Zone_4" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="35" transform="translate(1327,290)" gui_id="PS6_Zone_3" />
+  <rect class="conveyor" conveyor_id="0" data-toggle="tooltip" data-html="true" title="" width="34" height="114" transform="translate(1327,331)" gui_id="PS6_Zone_2" />
+
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,30)"  gui_id="MCP_ESTOP_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,50)"  gui_id="DEMATIC_LOOP_OK" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(50,70)"  gui_id="K2_SAFETY_RELAY_OK" />
+
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(582,50)"  gui_id="PS1_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1010,50)"  gui_id="PS3_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1335,50)"  gui_id="PS5_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(636,390)"  gui_id="PS2_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1060,390)"  gui_id="PS4_E-STOP_ZONE_OPEN" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1390,390)"  gui_id="PS6_E-STOP_ZONE_OPEN" />
+
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(740,78)"  gui_id="LHS_ESTOP_DIAG_ZONE_2" />
+  <use xlink:href="#estop" class="estop" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(800,350)"  gui_id="RHS_ESTOP_DIAG_ZONE_1" />
+
+
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(20,195) rotate(90)"  gui_id="TRAY_COUNT_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(45,195) rotate(90)"  gui_id="ZONE_START_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(113,195) rotate(90)"  gui_id="ZONE1_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(179,195) rotate(90)"  gui_id="ZONE2_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(242,195) rotate(90)"  gui_id="ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(305,195) rotate(90)"  gui_id="ZONE4_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(358,195) rotate(90)"  gui_id="ZONE5_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(410,195) rotate(90)"  gui_id="ZONE6_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(463,195) rotate(90)"  gui_id="ZONE7_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(515,195) rotate(90)"  gui_id="ZONE8_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(580,195) rotate(90)"  gui_id="ZONE9_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(633,195) rotate(90)"  gui_id="ZONE10_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(686,195) rotate(90)"  gui_id="ZONE11_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(738,195) rotate(90)"  gui_id="ZONE12_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(843,195) rotate(90)"  gui_id="ZONE14_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(895,195) rotate(90)"  gui_id="ZONE15_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(957,195) rotate(90)"  gui_id="ZONE16_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1010,195) rotate(90)"  gui_id="ZONE17_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1063,195) rotate(90)"  gui_id="ZONE18_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1116,195) rotate(90)"  gui_id="ZONE19_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1161,195) rotate(90)"  gui_id="ZONE20_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1214,195) rotate(90)"  gui_id="ZONE21_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1267,195) rotate(90)"  gui_id="ZONE22_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1343,195) rotate(90)"  gui_id="ZONE23_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1396,195) rotate(90)"  gui_id="ZONE24_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1448,195) rotate(90)"  gui_id="ZONE25_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,195) rotate(90)"  gui_id="ZONE13_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(805,210) rotate(150)"  gui_id="ZONE13_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(820,195) rotate(90)"  gui_id="ZONE14_ENTRY_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,190)"  gui_id="ZONE_L1_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,235)"  gui_id="ZONE_R1_ENTRY_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,258)"  gui_id="ZONE_R1_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(760,320)"  gui_id="ZONE_R2_PE1" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(780,320)"  gui_id="ZONE_R2_PE2" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,290) rotate(90)"  gui_id="ZONE_R3_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(720,290) rotate(90)"  gui_id="ZONE_R3_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,258)"  gui_id="ZONE_R5_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,290)"  gui_id="ZONE_R5_ENTRY_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(630,240)"  gui_id="ZONE_R5_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(810,290) rotate(90)"  gui_id="ZONE_R6_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(845,290) rotate(90)"  gui_id="ZONE_R6_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(905,290) rotate(90)"  gui_id="ZONE_R7_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(910,258)"  gui_id="ZONE_R9_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(910,290)"  gui_id="ZONE_R9_ENTRY_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(890,240)"  gui_id="ZONE_R9_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,160)"  gui_id="ZONE_L1_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(760,110)"  gui_id="ZONE_L2_PE1" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(780,110)"  gui_id="ZONE_L2_PE2" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(815,105) rotate(90)"  gui_id="ZONE_L3_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(850,105) rotate(90)"  gui_id="ZONE_L3_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(850,180)"  gui_id="ZONE_L5_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(850,150)"  gui_id="ZONE_L5_ENTRY_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(835,190)"  gui_id="ZONE_L5_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,105) rotate(90)"  gui_id="ZONE_L6_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(710,105) rotate(90)"  gui_id="ZONE_L6_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(660,105) rotate(90)"  gui_id="ZONE_L7_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(590,180)"  gui_id="ZONE_L9_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(590,150)"  gui_id="ZONE_L9_ENTRY_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(575,190)"  gui_id="ZONE_L9_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,300)  rotate(30)"  gui_id="ZONE_R4_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,320)"  gui_id="ZONE_R4_EDGED_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(965,305)  rotate(150)"  gui_id="ZONE_R8_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(945,315)"  gui_id="ZONE_R8_EDGED_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(860,110)  rotate(30)"  gui_id="ZONE_L4_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(885,110)"  gui_id="ZONE_L4_EDGED_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,120)  rotate(150)"  gui_id="ZONE_L8_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(600,110)"  gui_id="ZONE_L8_EDGED_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(505,95)"  gui_id="PS1_ZONE2_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(505,140)"  gui_id="PS1_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(505,180)"  gui_id="PS1_ZONE4_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(490,190)"  gui_id="PS1_ZONE4_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(560,341)"  gui_id="PS2_ZONE2_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(560,300)"  gui_id="PS2_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(560,258)"  gui_id="PS2_ZONE4_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(555,240)"  gui_id="PS2_ZONE4_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(930,95)"  gui_id="PS3_ZONE2_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(930,140)"  gui_id="PS3_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(930,180)"  gui_id="PS3_ZONE4_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(915,190)"  gui_id="PS3_ZONE4_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(983,341)"  gui_id="PS4_ZONE2_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(983,300)"  gui_id="PS4_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(983,258)"  gui_id="PS4_ZONE4_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(968,240)"  gui_id="PS4_ZONE4_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1258,95)"  gui_id="PS5_ZONE2_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1258,140)"  gui_id="PS5_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1258,180)"  gui_id="PS5_ZONE4_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1243,190)"  gui_id="PS5_ZONE4_CLEAR_PE" />
+
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1312,341)"  gui_id="PS6_ZONE2_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1312,300)"  gui_id="PS6_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1312,258)"  gui_id="PS6_ZONE4_PE" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1298,240)"  gui_id="PS6_ZONE4_CLEAR_PE" />
+
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(790,270)"  gui_id="R1_STOP_UP_PROX" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(790,295)"  gui_id="R1_STOP_DOWN_PROX" />
+
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(790,130)"  gui_id="L1_STOP_UP_PROX" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(790,155)"  gui_id="L1_STOP_DOWN_PROX" />
+
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(550,95)"  gui_id="PS1_STOP_UP_PROX" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(550,120)"  gui_id="PS1_STOP_DOWN_PROX" />
+
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(605,315)"  gui_id="PS2_STOP_UP_PROX" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(605,340)"  gui_id="PS2_STOP_DOWN_PROX" />
+
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(975,95)"  gui_id="PS3_STOP_UP_PROX" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(975,120)"  gui_id="PS3_STOP_DOWN_PROX" />
+
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1028,315)"  gui_id="PS4_STOP_UP_PROX" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1028,340)"  gui_id="PS4_STOP_DOWN_PROX" />
+
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1303,95)"  gui_id="PS5_STOP_UP_PROX" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1303,120)"  gui_id="PS5_STOP_DOWN_PROX" />
+
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1357,315)"  gui_id="PS6_STOP_UP_PROX" />
+  <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1357,340)"  gui_id="PS6_STOP_DOWN_PROX" />
+
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(88,215)"  gui_id="Motor_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(154,215)"  gui_id="Motor_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(217,215)"  gui_id="Motor_Zone_3" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(280,215)"  gui_id="Motor_Zone_4" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(333,215)"  gui_id="Motor_Zone_5" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(385,215)"  gui_id="Motor_Zone_6" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(428,215)"  gui_id="Motor_Ma_Zone_7" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(443,215)"  gui_id="Motor_Mb_Zone_7" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(458,215)"  gui_id="Motor_Mc_Zone_7" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(481,215)"  gui_id="Motor_Ma_Zone_8" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(496,215)"  gui_id="Motor_Mb_Zone_8" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(511,215)"  gui_id="Motor_Mc_Zone_8" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(555,215)"  gui_id="Motor_Zone_9" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(608,215)"  gui_id="Motor_Zone_10" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(661,215)"  gui_id="Motor_Zone_11" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(713,215)"  gui_id="Motor_Zone_12" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(818,215)"  gui_id="Motor_Zone_14" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,215)"  gui_id="Motor_Zone_15" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(922,215)"  gui_id="Motor_Zone_16" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(985,215)"  gui_id="Motor_Zone_17" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1028,215)"  gui_id="Motor_Ma_Zone_18" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1043,215)"  gui_id="Motor_Mb_Zone_18" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1058,215)"  gui_id="Motor_Mc_Zone_18" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1081,215)"  gui_id="Motor_Ma_Zone_19" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1096,215)"  gui_id="Motor_Mb_Zone_19" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1111,215)"  gui_id="Motor_Mc_Zone_19" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1140,215)"  gui_id="Motor_Zone_20" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1178,215)"  gui_id="Motor_Ma_Zone_21" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1193,215)"  gui_id="Motor_Mb_Zone_21" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1208,215)"  gui_id="Motor_Mc_Zone_21" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1232,215)"  gui_id="Motor_Ma_Zone_22" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1247,215)"  gui_id="Motor_Mb_Zone_22" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1262,215)"  gui_id="Motor_Mc_Zone_22" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1318,215)"  gui_id="Motor_Zone_23" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1361,215)"  gui_id="Motor_Ma_Zone_24" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1376,215)"  gui_id="Motor_Mb_Zone_24" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1391,215)"  gui_id="Motor_Mc_Zone_24" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1413,215)"  gui_id="Motor_Ma_Zone_25" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1428,215)"  gui_id="Motor_Mb_Zone_25" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1443,215)"  gui_id="Motor_Mc_Zone_25" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(770,245)"  gui_id="Motor_Ma_Zone_R1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(770,270)"  gui_id="Motor_Mb_Zone_R1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(810,280)"  gui_id="Motor_Stop_Zone_R1" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(720,305)"  gui_id="Motor_Ma_Zone_R3" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(670,245)"  gui_id="Motor_Zone_R5" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(670,270)"  gui_id="Motor_Mc_Zone_R5" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(825,305)"  gui_id="Motor_Zone_R6" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(860,305)"  gui_id="Motor_Ma_Zone_R7" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(880,305)"  gui_id="Motor_Zone_R7" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(925,270)"  gui_id="Motor_Zone_R9" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(925,245)"  gui_id="Motor_Mc_Zone_R9" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(770,185)"  gui_id="Motor_Ma_Zone_L1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(770,155)"  gui_id="Motor_Mb_Zone_L1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(805,145)"  gui_id="Motor_Stop_Zone_L1" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(825,125)"  gui_id="Motor_Ma_Zone_L3" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,165)"  gui_id="Motor_Zone_L5" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,185)"  gui_id="Motor_Mc_Zone_L5" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(720,125)"  gui_id="Motor_Zone_L6" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(680,125)"  gui_id="Motor_Ma_Zone_L7" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(660,125)"  gui_id="Motor_Zone_L7" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(620,165)"  gui_id="Motor_Zone_L9" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(620,185)"  gui_id="Motor_Mc_Zone_L9" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(522,0)"  gui_id="Motor_Ma_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(538,11)"  gui_id="Motor_Mb_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(522,22)"  gui_id="Motor_Mc_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(538,33)"  gui_id="Motor_Md_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(522,44)"  gui_id="Motor_Me_PS1_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(538,55)"  gui_id="Motor_Ma_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(522,66)"  gui_id="Motor_Mb_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(538,77)"  gui_id="Motor_Mc_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(522,88)"  gui_id="Motor_Md_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(538,99)"  gui_id="Motor_Me_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,108)"  gui_id="Motor_Stop_PS1_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,130)"  gui_id="Motor_PS1_Zone_3" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,170)"  gui_id="Motor_PS1_Zone_4" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(530,190)"  gui_id="Motor_Mb_PS1_Zone_4" />
+
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(577,430)"  gui_id="Motor_Ma_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(593,419)"  gui_id="Motor_Mb_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(577,408)"  gui_id="Motor_Mc_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(593,397)"  gui_id="Motor_Md_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(577,386)"  gui_id="Motor_Me_PS2_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(593,375)"  gui_id="Motor_Ma_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(577,364)"  gui_id="Motor_Mb_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(593,353)"  gui_id="Motor_Mc_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(577,342)"  gui_id="Motor_Md_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(593,331)"  gui_id="Motor_Me_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(615,330)"  gui_id="Motor_Stop_PS2_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,300)"  gui_id="Motor_PS2_Zone_3" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,260)"  gui_id="Motor_PS2_Zone_4" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(585,240)"  gui_id="Motor_Mb_PS2_Zone_4" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(947,0)"  gui_id="Motor_Ma_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(963,11)"  gui_id="Motor_Mb_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(947,22)"  gui_id="Motor_Mc_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(963,33)"  gui_id="Motor_Md_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(947,44)"  gui_id="Motor_Me_PS3_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(963,55)"  gui_id="Motor_Ma_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(947,66)"  gui_id="Motor_Mb_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(963,77)"  gui_id="Motor_Mc_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(947,88)"  gui_id="Motor_Md_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(963,99)"  gui_id="Motor_Me_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(987,108)"  gui_id="Motor_Stop_PS3_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,130)"  gui_id="Motor_PS3_Zone_3" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,170)"  gui_id="Motor_PS3_Zone_4" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(955,190)"  gui_id="Motor_Mb_PS3_Zone_4" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1000,430)"  gui_id="Motor_Ma_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1016,419)"  gui_id="Motor_Mb_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1000,408)"  gui_id="Motor_Mc_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1016,397)"  gui_id="Motor_Md_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1000,386)"  gui_id="Motor_Me_PS4_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1016,375)"  gui_id="Motor_Ma_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1000,364)"  gui_id="Motor_Mb_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1016,353)"  gui_id="Motor_Mc_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1000,342)"  gui_id="Motor_Md_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1016,331)"  gui_id="Motor_Me_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1038,330)"  gui_id="Motor_Stop_PS4_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,300)"  gui_id="Motor_PS4_Zone_3" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,260)"  gui_id="Motor_PS4_Zone_4" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1008,240)"  gui_id="Motor_Mb_PS4_Zone_4" />
+
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1275,0)"  gui_id="Motor_Ma_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1291,11)"  gui_id="Motor_Mb_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1275,22)"  gui_id="Motor_Mc_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1291,33)"  gui_id="Motor_Md_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1275,44)"  gui_id="Motor_Me_PS5_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1291,55)"  gui_id="Motor_Ma_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1275,66)"  gui_id="Motor_Mb_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1291,77)"  gui_id="Motor_Mc_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1275,88)"  gui_id="Motor_Md_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1291,99)"  gui_id="Motor_Me_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,108)"  gui_id="Motor_Stop_PS5_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,130)"  gui_id="Motor_PS5_Zone_3" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,170)"  gui_id="Motor_PS5_Zone_4" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1283,190)"  gui_id="Motor_Mb_PS5_Zone_4" />
+
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1329,430)"  gui_id="Motor_Ma_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1345,419)"  gui_id="Motor_Mb_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1329,408)"  gui_id="Motor_Mc_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1345,397)"  gui_id="Motor_Md_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1329,386)"  gui_id="Motor_Me_PS6_Zone_1" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1345,375)"  gui_id="Motor_Ma_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1329,364)"  gui_id="Motor_Mb_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1345,353)"  gui_id="Motor_Mc_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1329,342)"  gui_id="Motor_Md_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1345,331)"  gui_id="Motor_Me_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1367,330)"  gui_id="Motor_Stop_PS6_Zone_2" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,300)"  gui_id="Motor_PS6_Zone_3" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,260)"  gui_id="Motor_PS6_Zone_4" />
+  <use xlink:href="#motor" class="motor" motor_id="0" clickable="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1337,240)"  gui_id="Motor_Mb_PS6_Zone_4" />
+
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(30,40)"  gui_id="Main_PLC" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(30,60)"  gui_id="Safety_PLC" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(0,250)"  gui_id="Master_1" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(120,250)"  gui_id="Master_1_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(249,250)"  gui_id="Master_1_Node_3" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(400,250)"  gui_id="Master_1_Node_4" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(445,250)"  gui_id="Master_1_Node_5" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(490,250)"  gui_id="Master_1_Node_6" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(583,250)"  gui_id="Master_1_Node_7" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(690,250)"  gui_id="Master_1_Node_8" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(848,250)"  gui_id="Master_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,250)"  gui_id="Master_2_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,250)"  gui_id="Master_2_Node_3" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1100,250)"  gui_id="Master_2_Node_4" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1150,250)"  gui_id="Master_2_Node_5" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1190,250)"  gui_id="Master_2_Node_6" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1240,250)"  gui_id="Master_2_Node_7" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1305,250)"  gui_id="Master_2_Node_8" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1380,250)"  gui_id="Master_2_Node_9" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1430,250)"  gui_id="Master_2_Node_10" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(754,250)"  gui_id="Master_3" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(784,250)"  gui_id="Master_3_Node_2" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(805,265)"  gui_id="Master_4" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(634,265)"  gui_id="Master_4_Node_3" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(720,338)"  gui_id="Master_4_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(835,338)"  gui_id="Master_4_Node_4" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(958,265)"  gui_id="Master_4_Node_5" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(732,170)"  gui_id="Master_5" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(680,98)"  gui_id="Master_5_Node_4" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(732,170)"  gui_id="Master_5_Node_1" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(820,98)"  gui_id="Master_5_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(903,170)"  gui_id="Master_5_Node_3" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(580,170)"  gui_id="Master_5_Node_5" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745,338)"  gui_id="Master_6" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,338)"  gui_id="Master_6_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(785,338)"  gui_id="Master_6_Node_3" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(645,338)"  gui_id="Master_7" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(665,338)"  gui_id="Master_7_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(685,338)"  gui_id="Master_7_Node_3" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(905,338)"  gui_id="Master_8" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(925,338)"  gui_id="Master_8_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(945,338)"  gui_id="Master_8_Node_3" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(745,98)"  gui_id="Master_9" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(765,98)"  gui_id="Master_9_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(785,98)"  gui_id="Master_9_Node_3" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(850,98)"  gui_id="Master_10" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(870,98)"  gui_id="Master_10_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(890,98)"  gui_id="Master_10_Node_3" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(590,98)"  gui_id="Master_11" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(610,98)"  gui_id="Master_11_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(630,98)"  gui_id="Master_11_Node_3" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,5)"  gui_id="Master_12" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,55)"  gui_id="Master_12_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,108)"  gui_id="Master_12_Node_3" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(562,160)"  gui_id="Master_12_Node_4" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,265)"  gui_id="Master_12_Node_8" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,305)"  gui_id="Master_12_Node_7" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,361)"  gui_id="Master_12_Node_6" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(616,411)"  gui_id="Master_12_Node_5" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,5)"  gui_id="Master_13" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,55)"  gui_id="Master_13_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,108)"  gui_id="Master_13_Node_3" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(990,160)"  gui_id="Master_13_Node_4" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,265)"  gui_id="Master_13_Node_8" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,305)"  gui_id="Master_13_Node_7" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,361)"  gui_id="Master_13_Node_6" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1040,411)"  gui_id="Master_13_Node_5" />
+
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,5)"  gui_id="Master_14" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,55)"  gui_id="Master_14_Node_2" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,108)"  gui_id="Master_14_Node_3" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1315,160)"  gui_id="Master_14_Node_4" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,265)"  gui_id="Master_14_Node_8" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,305)"  gui_id="Master_14_Node_7" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,361)"  gui_id="Master_14_Node_6" />
+  <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,411)"  gui_id="Master_14_Node_5" />
 
 </svg>
