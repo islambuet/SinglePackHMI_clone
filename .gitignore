@@ -9,3 +9,4 @@ logs/
 *.njsproj
 *.sln
 *.sw?
+SinglePack-win32-x64*
