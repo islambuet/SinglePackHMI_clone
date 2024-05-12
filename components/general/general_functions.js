@@ -89,11 +89,13 @@ function setMotorDetailsView(){
             if(motorForDetailsView['bi_directional']==1){
                 $('#motor-details #button-motor-speed-forward').show();
                 $('#motor-details #button-motor-speed-backward').show();
+                $('#motor-details #button-motor-speed-stop').css("right","0").show();
             }
             else{
                 $('#motor-details #button-motor-speed-start').show();
+                $('#motor-details #button-motor-speed-stop').css("right","70px").show();
             }
-            $('#motor-details #button-motor-speed-stop').show();
+
         }
         $('#motor-details #command_buttons_container').show();
         $('#motor-details').css('height','225px');
