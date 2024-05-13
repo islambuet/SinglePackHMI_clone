@@ -37,6 +37,8 @@
                 <tbody></tbody>
             </table>
         </div>
+    </div>
+    <div class="col-lg-6">
         <h3>Timeout Parameters</h3>
         <div style="display: block; overflow-y: auto; height: 370px">
             <table class="table table-sm table-bordered table-striped" id="table_parameters_timeout" style="">
@@ -53,93 +55,12 @@
             </table>
         </div>
     </div>
-    <div class="col-lg-6">
-        <h3>Barcode</h3>
-        <div style="display: block;">
-            <table class="table table-sm table-bordered table-striped" id="table_parameters_barcode" style="">
-                <thead>
-                <tr>
-                    <th style="width: 115px;">Parameter ID</th>
-                    <th>Description</th>
-                    <th style="width: 54px;">Value</th>
-                    <th style="width: 72px;">Unit</th>
-                    <th style="width: 228px;"></th>
-                </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
-        <h4>Calibration</h4>
-        <table class="table table-sm table-bordered table-striped" style="">
-            <thead>
-            <tr>
-                <th></th>
-                <th style="text-align: right;width:22%">Power Turn Entry Pe</th>
-                <th style="text-align: right;width:22%">Reject Pe</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Package 1</td>
-                <td data-counter-id="1" class="counter-value" style="text-align: right"></td>
-                <td data-counter-id="6" class="counter-value" style="text-align: right"></td>
-            </tr>
-            <tr>
-                <td>Package 2</td>
-                <td data-counter-id="2" class="counter-value" style="text-align: right"></td>
-                <td data-counter-id="7" class="counter-value" style="text-align: right"></td>
-            </tr>
-            <tr>
-                <td>Package 3</td>
-                <td data-counter-id="3" class="counter-value" style="text-align: right"></td>
-                <td data-counter-id="8" class="counter-value" style="text-align: right"></td>
-            </tr>
-            <tr>
-                <td>Package 4</td>
-                <td data-counter-id="4" class="counter-value" style="text-align: right"></td>
-                <td data-counter-id="9" class="counter-value" style="text-align: right"></td>
-            </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered table-striped" style="table-layout: fixed">
-            <tbody>
-            <tr>
-                <td>Power Turn Tracking Window</td>
-                <td style="text-align: right;width:22%"><span class="param-value" data-param-id="60"></span><span class="param-unit" data-param-id="60"></span></td>
-                <td style="text-align: right;width:22%"><span  class="param-value" data-param-id="61"></span><span class="param-unit" data-param-id="61"></span></td>
-            </tr>
-            <tr>
-                <td>Reject Position</td>
-                <td style="text-align: right;width:22%"><span  class="param-value" data-param-id="62" ></span><span class="param-unit" data-param-id="62"></span></td>
-                <td>&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
-        <div style="text-align: end;">
-            <button id="button_calibrate" class="button-device-command button-3d button-rectangle" style="display: none;" data-device-id="87" data-command="0" data-parameter1="0">Calibrate</button>
-        </div>
-        <h3>Singulator Parameters</h3>
-        <div style="display: block; overflow-y: auto; height: 370px">
-            <table class="table table-sm table-bordered table-striped" id="table_parameters_singulator" style="">
-                <thead>
-                <tr>
-                    <th style="width: 115px;">Parameter ID</th>
-                    <th>Description</th>
-                    <th style="width: 54px;">Value</th>
-                    <th style="width: 72px;">Unit</th>
-                    <th style="width: 228px;"></th>
-                </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
 
-    </div>
 </div>
 
 
 <footer id="footer" class="container-fluid">
-    <%- include('../components/maint_footer') %>
+    <%- include('../components/maint/maint_footer') %>
 </footer>
 <script>
     /* global basic_info */

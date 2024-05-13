@@ -17,7 +17,7 @@
 
 
 <footer id="footer" class="container-fluid">
-    <%- include('../components/maint_footer') %>
+    <%- include('../components/maint/maint_footer') %>
 </footer>
 <script>
     /* global basic_info */
@@ -43,7 +43,7 @@
         let motor_speed_unit = basic_info['hmiSettings']['motor_speed_unit'];
         let devices = Object.values(basic_info['devices']);
         devices.forEach(record => {
-            if(Number(record['gui_id']) > 0) {
+            if(record['gui_id']) {
                 dataTable.row.add([
                     record['device_id'],
                     record['device_name'],
