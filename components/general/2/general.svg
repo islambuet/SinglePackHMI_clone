@@ -172,15 +172,15 @@
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,190)"  gui_id="ZONE_L1_ENTRY_PE" />
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,235)"  gui_id="ZONE_R1_ENTRY_PE" />
 
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,258)"  gui_id="ZONE_R1_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,275)"  gui_id="ZONE_R1_PE" />
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(760,320)"  gui_id="ZONE_R2_PE1" />
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(780,320)"  gui_id="ZONE_R2_PE2" />
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,290) rotate(90)"  gui_id="ZONE_R3_ENTRY_PE" />
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(720,290) rotate(90)"  gui_id="ZONE_R3_PE" />
 
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,258)"  gui_id="ZONE_R5_PE" />
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,290)"  gui_id="ZONE_R5_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,250)"  gui_id="ZONE_R5_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(650,275)"  gui_id="ZONE_R5_ENTRY_PE" />
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(630,240)"  gui_id="ZONE_R5_CLEAR_PE" />
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(810,290) rotate(90)"  gui_id="ZONE_R6_ENTRY_PE" />
@@ -188,8 +188,8 @@
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(905,290) rotate(90)"  gui_id="ZONE_R7_PE" />
 
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(910,258)"  gui_id="ZONE_R9_PE" />
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(910,290)"  gui_id="ZONE_R9_ENTRY_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(910,250)"  gui_id="ZONE_R9_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(910,275)"  gui_id="ZONE_R9_ENTRY_PE" />
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(890,240)"  gui_id="ZONE_R9_CLEAR_PE" />
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(750,160)"  gui_id="ZONE_L1_PE" />
@@ -230,8 +230,8 @@
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(490,190)"  gui_id="PS1_ZONE4_CLEAR_PE" />
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(560,341)"  gui_id="PS2_ZONE2_PE" />
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(560,300)"  gui_id="PS2_ZONE3_PE" />
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(560,258)"  gui_id="PS2_ZONE4_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(560,290)"  gui_id="PS2_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(560,250)"  gui_id="PS2_ZONE4_PE" />
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(555,240)"  gui_id="PS2_ZONE4_CLEAR_PE" />
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(930,95)"  gui_id="PS3_ZONE2_PE" />
@@ -240,8 +240,8 @@
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(915,190)"  gui_id="PS3_ZONE4_CLEAR_PE" />
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(983,341)"  gui_id="PS4_ZONE2_PE" />
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(983,300)"  gui_id="PS4_ZONE3_PE" />
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(983,258)"  gui_id="PS4_ZONE4_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(983,290)"  gui_id="PS4_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(983,250)"  gui_id="PS4_ZONE4_PE" />
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(968,240)"  gui_id="PS4_ZONE4_CLEAR_PE" />
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1258,95)"  gui_id="PS5_ZONE2_PE" />
@@ -250,8 +250,8 @@
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1243,190)"  gui_id="PS5_ZONE4_CLEAR_PE" />
 
   <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1312,341)"  gui_id="PS6_ZONE2_PE" />
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1312,300)"  gui_id="PS6_ZONE3_PE" />
-  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1312,258)"  gui_id="PS6_ZONE4_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1312,290)"  gui_id="PS6_ZONE3_PE" />
+  <use xlink:href="#photoeye" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1312,250)"  gui_id="PS6_ZONE4_PE" />
   <use xlink:href="#proximity" class="photoeye" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1298,240)"  gui_id="PS6_ZONE4_CLEAR_PE" />
 
   <use xlink:href="#proximity" class="proximity" input_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(790,270)"  gui_id="R1_STOP_UP_PROX" />
