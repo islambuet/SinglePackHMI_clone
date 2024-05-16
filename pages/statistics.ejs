@@ -1,21 +1,34 @@
+<div class="row">
+    <span>
+        <select id="statistics_interval" class="p-2" style="border:0;background-color: #f8f9fa;">
+            <option value="3">Every 3 minutes</option>
+            <option value="60">Hourly</option>
+        </select>
+    </span>
+    <span>
+        <select id="graph_type" class="p-2" style="border:0;background-color: #f8f9fa; ">
+            <option value="Tput">Tput</option>
+            <option value="Value">Value</option>
+        </select>
+    </span>
+    <span>
+        <div class="form-check ml-3 p-2">
+            <input class="form-check-input" type="checkbox" id="chk_refresh_disable">
+            <label class="form-check-label" for="chk_refresh_disable">Disable Refresh</label>
+        </div>
+    </span>
+    <span class="p-2" id="production_start_time">-</span>
 
+</div>
 <div class="row mt-2">
-    <div class="col-lg-6" id="bcr-chart" style="height: 280px;"></div>
-    <div class="col-lg-6">
-        <button style="display: none" id="button_reset" class="button-device-command button-3d button-rectangle"
-                data-device-id="86"
-                data-command="0"
-                data-parameter1="0">Reset
-        </button>
+    <div class="col-lg-12">
+        <div id="tput-chart" style="height: 500px;">TPUT Chart</div>
     </div>
 </div>
 
 <div class="row mt-2">
-    <div class="col-lg-6">
-        <div id="tput-chart" style="height: 406px;">TPUT Chart</div>
-    </div>
-    <div class="col-lg-6">
-
+    <div class="col-lg-12 text-center">
+        <button style="display: none" id="button_reset" class="button-device-command button-3d button-rectangle" data-device-id="86" data-command="0" data-parameter1="0">Reset</button>
     </div>
 </div>
 <footer id="footer" class="container-fluid">
@@ -24,6 +37,9 @@
 <script>
     /* global basic_info */
     /* global ipcRenderer */
+    const Highcharts = require('highcharts/highstock')
+    require('highcharts/modules/exporting')(Highcharts);
+    require('highcharts/modules/export-data')(Highcharts);
     function systemPageLoaded(){
 
         let currentUser=basic_info['currentUser'];
@@ -34,6 +50,170 @@
             $('#button_reset').show();
         }
         if(basic_info['connected']){
+            let requestData=[
+                {'name':'statistics_counter','params':{'per_page':1}},
+            ];
+            ipcRenderer.send("sendRequestToServer", "getStatisticsCounterLast",{},requestData);//send request now
+            setInterval(() => {
+                ipcRenderer.send("sendRequestToServer", "getStatisticsCounterLast",{},requestData);
+            }, 2000);
         }
     }
+    ipcRenderer.on("getStatisticsCounterLast", function(e, jsonObject) {
+        if(jsonObject['data']['statistics_counter']['records'].length>0){
+            let shiftInfo=jsonObject['data']['statistics_counter']['records'][0];
+            let shift_starting_time = shiftInfo['created_at_timestamp'];
+            $('#production_start_time').text(`[started from ${moment(shift_starting_time * 1000).format('MMM D Y, HH:mm:ss')}]`);
+
+
+            let to_timestamp = moment().unix();
+            let from_timestamp = moment().subtract(24, 'hours').unix();
+            let diff = ($('#statistics_interval').val()==60)?moment(shift_starting_time*1000).minutes():moment(shift_starting_time*1000).minutes() % 3;
+            let shift_starting_time_round = shift_starting_time - diff * 60- moment(shift_starting_time*1000).seconds();
+            if(from_timestamp<shift_starting_time_round){
+                from_timestamp=shift_starting_time_round;
+            }
+            if($('#statistics_interval').val()==60){
+                let requestData=[
+                    {'name':'statistics_hourly','params':{'from_timestamp': from_timestamp,'to_timestamp': to_timestamp}},
+                ];
+                ipcRenderer.send("sendRequestToServer", "getStatistics",{'statistics_interval':60,'graph_type':$('#graph_type').val()},requestData);//send request now
+            }
+            else{
+                let requestData=[
+                    {'name':'statistics','params':{'from_timestamp': from_timestamp,'to_timestamp': to_timestamp}},
+                ];
+                ipcRenderer.send("sendRequestToServer", "getStatistics",{'statistics_interval':3,'graph_type':$('#graph_type').val()},requestData);//send request now
+            }
+            //console.log(shift_starting_time,shift_starting_time_round,moment(shift_starting_time*1000).minutes() % 3,diff)
+        }
+        else{
+            let error_message = "<b>Please Contact with admin. No Schedule found</b>";
+            $("#alert_message").html(error_message);
+            $("#alert_message_container").show();
+        }
+    })
+    ipcRenderer.on("getStatistics", function(e, jsonObject) {
+        if ($('#chk_refresh_disable').is(":checked")) {
+            return;
+        }
+        let inductions=basic_info['inductions'];
+        let total_inductions=7;
+        let statistics_interval=jsonObject['params']['statistics_interval'];
+        let graph_type=jsonObject['params']['graph_type'];
+        let statistics_data=[];
+        let tput_chart_tickInterval=1;
+        let tput_chart_max=0;
+        let tput_chart_series=[];
+        let tput_chart_colors=[];
+        for(let i=0;i<total_inductions;i++){
+            tput_chart_colors[i]=inductions[i+1]['color'];
+            tput_chart_series[i]={
+                name: inductions[i+1]['label'],
+                marker: {enabled: false},
+                data: []
+            }
+        }
+
+        if(statistics_interval==60){
+            statistics_data=jsonObject['data']['statistics_hourly']['records']
+        }
+        else{
+            statistics_data=jsonObject['data']['statistics']['records']
+        }
+        for(let k=0;k<statistics_data.length;k++){
+            let time_slot = Number(statistics_data[k]['created_at_timestamp'])+60*statistics_interval;//adding next 3min or next hour
+            for(let i=0;i<total_inductions;i++){
+                let y=Number(statistics_data[k]['i'+(+i+1)]);
+                if(graph_type=='Tput' && statistics_interval==3){
+                    y=y*20;
+                }
+                if(y>tput_chart_max){
+                    tput_chart_max=y;
+                }
+                tput_chart_series[i]['data'].push({
+                    x: time_slot*1000,
+                    y: y
+                })
+            }
+        }
+        if(tput_chart_max>0){
+            tput_chart_tickInterval=Math.floor(tput_chart_max/4);
+        }
+        Highcharts.chart('tput-chart', {
+            plotOptions: {
+                series: {
+                    animation: false,
+                    turboThreshold: 0
+                }
+            },
+            chart: {
+                type: 'spline',
+                animation: Highcharts.svg, // don't animate in old IE
+                marginRight: 10,
+                borderColor: '#D3D3D3',
+                borderWidth: 1
+            },
+
+            time: {
+                useUTC: false
+            },
+
+            title: {
+                text: (statistics_interval==60?'Hourly ':'Every 3 minutes ')+graph_type
+            },
+
+            accessibility: {},
+            xAxis: {
+                type: 'datetime',
+                tickInterval: 1000 * 60 * 60
+            },
+
+            yAxis: {
+                title: {
+                    text: null
+                },
+                labels: {
+                    format: '{value}'
+                },
+                tickInterval: tput_chart_tickInterval,
+                tickWidth: 1,
+                tickLength: 5,
+                min: 0,
+                max: tput_chart_max,
+                lineColor: '#C0C0C0',
+                lineWidth: 1,
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+
+            tooltip: {
+                headerFormat: '<b>{series.name}</b><br/>',
+                pointFormat: '{point.x:%Y-%m-%d %H:%M:%S}<br/>{point.y:.2f}'
+            },
+
+            legend: {
+                enabled: true
+            },
+
+            exporting: {
+                enabled: true,
+                buttons: {
+                    contextButton: {
+                        menuItems: ['downloadCSV', 'separator', 'downloadPDF', 'downloadPNG']
+                    }
+                }
+            },
+
+            credits: {
+                enabled: false
+            },
+            colors: tput_chart_colors,
+            series:tput_chart_series
+        });
+
+    })
 </script>
