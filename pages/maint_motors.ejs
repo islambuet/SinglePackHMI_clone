@@ -190,7 +190,7 @@
             if(motor['alarm_ids']){
                 let alarm_ids=motor['alarm_ids'].split(",");
                 for (let i=0;i<alarm_ids.length;i++){
-                    if((alarm_ids[i]>0 ) && (alarms_active_states[machine_id+'_'+alarm_ids[i]+'_0'] !=undefined)){//motor['alarm_type']  here is 0
+                    if((alarm_ids[i]>0 ) && (alarms_active_states[machine_id+'_'+alarm_ids[i]+'_'+motor['alarm_type']] !=undefined)){//motor['alarm_type']  here is 0
                         status='#f00';
                         faulted_status='#f00';
                         break;
