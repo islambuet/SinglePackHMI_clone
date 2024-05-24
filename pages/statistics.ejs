@@ -97,8 +97,9 @@
         if ($('#chk_refresh_disable').is(":checked")) {
             return;
         }
-        let inductions=basic_info['inductions'];
-        let total_inductions=7;
+        let machine_id=jsonObject['params']['machine_id'];
+        let inducts=basic_info['inducts'];
+        let total_inducts=7;
         let statistics_interval=jsonObject['params']['statistics_interval'];
         let graph_type=jsonObject['params']['graph_type'];
         let statistics_data=[];
@@ -106,10 +107,10 @@
         let tput_chart_max=0;
         let tput_chart_series=[];
         let tput_chart_colors=[];
-        for(let i=0;i<total_inductions;i++){
-            tput_chart_colors[i]=inductions[i+1]['color'];
+        for(let i=0;i<total_inducts;i++){
+            tput_chart_colors[i]=inducts[machine_id+'_'+(i+1)]['color_statistics'];
             tput_chart_series[i]={
-                name: inductions[i+1]['label'],
+                name: inducts[machine_id+'_'+(i+1)]['induct_name'],
                 marker: {enabled: false},
                 data: []
             }
@@ -123,7 +124,7 @@
         }
         for(let k=0;k<statistics_data.length;k++){
             let time_slot = Number(statistics_data[k]['created_at_timestamp'])+60*statistics_interval;//adding next 3min or next hour
-            for(let i=0;i<total_inductions;i++){
+            for(let i=0;i<total_inducts;i++){
                 let y=Number(statistics_data[k]['i'+(+i+1)]);
                 if(graph_type=='Tput' && statistics_interval==3){
                     y=y*20;
