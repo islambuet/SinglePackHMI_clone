@@ -1,2 +1,2 @@
 const systemSiteName="SinglePack";
-const systemVersion="1.0.0.5";
+const systemVersion="1.0.0.6";
