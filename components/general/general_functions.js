@@ -8,7 +8,8 @@
 
 let motorIdForDetailsView=0;
 let machine_mode=0;
-
+let mpinduct_states_labels={}
+let mpinduct_errors_labels=[]
 /*Labels*/
 function setActiveAlarmSettings(){
     let hmiSettings= basic_info['hmiSettings']
@@ -74,6 +75,25 @@ function setMotorsLabel(){
         $('#motor-details #label_speed_input_unit').html('m/s')
     }
 }
+function setMpInductsLabel(){
+    for(let key in basic_info['mpinducts']){
+        let mpinduct=basic_info['mpinducts'][key];
+        if(mpinduct['gui_id']){
+            $('.mpinduct[gui_id="'+mpinduct["gui_id"]+'"] .mpinduct_name').text(mpinduct['name'])
+            $('.mpinduct[gui_id="'+mpinduct["gui_id"]+'"]').attr('mpinduct_id',mpinduct["mpinduct_id"]).show();
+        }
+    }
+    if(basic_info['mpinducts_labels']){
+        Object.values(basic_info['mpinducts_labels']).forEach(item => {
+            if(item['type']==0){
+                mpinduct_states_labels[item['value']]=item;
+            }
+            else if(item['type']==1){
+                mpinduct_errors_labels[item['value']]=item;
+            }
+        });
+    }
+}
 function setMotorDetailsView(){
 
     if(machine_mode!=1){
@@ -102,7 +122,6 @@ function setMotorDetailsView(){
     }
 }
 function setButtonsToggleStatus(){
-    console.log(basic_info['hmiSettings'])
     if(basic_info['hmiSettings']['btn_toggle_bg']=='0'){
         $('#btn_toggle_bg').trigger('click');
     }
@@ -123,6 +142,9 @@ function setButtonsToggleStatus(){
     }
     if(basic_info['hmiSettings']['btn_toggle_motors']=='0'){
         $('#btn_toggle_motors').trigger('click');
+    }
+    if(basic_info['hmiSettings']['btn_toggle_mpinducts']=='0'){
+        $('#btn_toggle_mpinducts').trigger('click');
     }
 }
 function changeToggleButtonState(button_id,elements,setting_var){
@@ -158,6 +180,10 @@ $(document).on('click','#btn_toggle_proximity',function (event){
 })
 $(document).on('click','#btn_toggle_motors',function (event){
     changeToggleButtonState('#btn_toggle_motors',$('.motor').not('[motor_id=0]'),'btn_toggle_motors')
+})
+$(document).on('click','#btn_toggle_mpinducts',function (event){
+    $('.mpinduct').not('[mpinduct_id=0]').hide();
+    changeToggleButtonState('#btn_toggle_mpinducts',$('.mpinduct').not('[mpinduct_id=0]'),'btn_toggle_mpinducts')
 })
 $(document).on('click','#btn_toggle_legend',function (event){
     //window.open('components/general/general_colors.svg', '_blank', 'top=0,left=0')
@@ -392,6 +418,28 @@ function setMotorsStates(data){
             }
             $('#motor-details #cnx_status').css('fill',cnx_status);
             $('#motor-details #faulted_status').css('fill',faulted_status);
+        }
+    }
+}
+function setMpInductsStates(data){
+    let machine_id=basic_info['selectedMachineId'];
+    let mpinducts_states=data['mpinducts_states']
+
+    for(let key in mpinducts_states){
+        let mpinduct_state=mpinducts_states[key];
+        $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .npinduct_count').text(mpinduct_state['count'])
+        if(mpinduct_states_labels[mpinduct_state['state']]){
+            $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .state').css('fill',mpinduct_states_labels[mpinduct_state['state']]['color']);
+        }
+        else{
+            $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .state').css('fill','#000000');
+        }
+        $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .error').css('fill','#ffffff');
+        for(let i=0;i<16;i++){
+            let column='b'+i;
+            if(mpinduct_state[column]==1){
+                $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .error').css('fill','#ff0000');
+            }
         }
     }
 }

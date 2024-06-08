@@ -53,6 +53,7 @@
             setDevicesLabel();//general_functions
             setMotorsLabel();//general_functions
             setMotorsLabel();//general_functions
+            setMpInductsLabel();//general_functions
             setButtonsToggleStatus();//general_functions
 
             requestPageData();
@@ -67,6 +68,7 @@
             {'name':'conveyors_states','params':{}},
             {'name':'devices_states','params':{}},
             {'name':'motors_current_speed','params':{}},
+            {'name':'mpinducts_states','params':{}},
             {'name':'machine_mode','params':{}},
         ];
         ipcRenderer.send("sendRequestToServer", "getGeneralViewData",{},requestData);
@@ -77,5 +79,6 @@
         setInputsStates(jsonObject['data']['inputs_states']);//general_functions
         setDevicesStates(jsonObject['data']['devices_states']);//general_functions
         setMotorsStates(jsonObject['data']);//general_functions
+        setMpInductsStates(jsonObject['data']);//general_functions
     })
 </script>

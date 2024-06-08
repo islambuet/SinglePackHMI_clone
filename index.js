@@ -41,7 +41,8 @@ function getHMISettings(){
         'btn_toggle_estop' : store.get(project_prefix+'btn_toggle_estop', '1'),
         'btn_toggle_photoeyes' : store.get(project_prefix+'btn_toggle_photoeyes', '1'),
         'btn_toggle_proximity' : store.get(project_prefix+'btn_toggle_proximity', '1'),
-        'btn_toggle_motors' : store.get(project_prefix+'btn_toggle_motors', '1')
+        'btn_toggle_motors' : store.get(project_prefix+'btn_toggle_motors', '1'),
+        'btn_toggle_mpinducts' : store.get(project_prefix+'btn_toggle_mpinducts', '1')
     };
 }
 let unRegisteredUser={'id':0,'name':'Amazon Operator','role':0};
