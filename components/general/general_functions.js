@@ -434,12 +434,20 @@ function setMpInductsStates(data){
         else{
             $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .state').css('fill','#000000');
         }
-        $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .error').css('fill','#ffffff');
+        let error_color='#ffffff';
+        let error_ordering=-1;
+
         for(let i=0;i<16;i++){
             let column='b'+i;
             if(mpinduct_state[column]==1){
-                $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .error').css('fill','#ff0000');
+                if(mpinduct_errors_labels[column]){
+                    if(mpinduct_errors_labels[column]['ordering']>=error_ordering){
+                        error_ordering=mpinduct_errors_labels[column]['ordering'];
+                        error_color=mpinduct_errors_labels[column]['color'];
+                    }
+                }
             }
         }
+        $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .error').css('fill',error_color);
     }
 }
