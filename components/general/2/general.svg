@@ -556,34 +556,266 @@
   <use xlink:href="#device" class="device" device_id="0" data-toggle="tooltip" data-html="true" title="" transform="translate(1370,411)"  gui_id="Master_14_Node_5" />
 
   <g class="mpinduct" mpinduct_id="0" transform="translate(300,200)" gui_id="MP05">
-    <rect class="state" x="0" y="0" width="60" height="20" style="stroke:black;fill:#ffffff" />
-    <svg width="60" height="20" x="0" y="0">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
       <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
     </svg>
-    <rect class="error" x="0" y="20" width="60" height="20" style="stroke:black;fill:#ffffff" />
-    <svg width="60" height="20" x="0" y="20">
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
       <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
     </svg>
   </g>
 
-  <g class="mpinduct" mpinduct_id="0" transform="translate(419,150)" gui_id="MP07">
-    <rect class="state" x="0" y="0" width="60" height="20" style="stroke:black;fill:#ffffff" />
-    <svg width="60" height="20" x="0" y="0">
+  <g class="mpinduct" mpinduct_id="0" transform="translate(419,153)" gui_id="MP07">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
       <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
     </svg>
-    <rect class="error" x="0" y="20" width="60" height="20" style="stroke:black;fill:#ffffff" />
-    <svg width="60" height="20" x="0" y="20">
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
       <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
     </svg>
   </g>
 
-  <g class="mpinduct" mpinduct_id="0" transform="translate(470,260)" gui_id="MP08">
-    <rect class="state" x="0" y="0" width="60" height="20" style="stroke:black;fill:#ffffff" />
-    <svg width="60" height="20" x="0" y="0">
+  <g class="mpinduct" mpinduct_id="0" transform="translate(471,247)" gui_id="MP08">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
       <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
     </svg>
-    <rect class="error" x="0" y="20" width="60" height="20" style="stroke:black;fill:#ffffff" />
-    <svg width="60" height="20" x="0" y="20">
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+
+  <g class="mpinduct" mpinduct_id="0" transform="translate(510,153)" gui_id="MP44">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(560,247)" gui_id="MP47">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(590,153)" gui_id="MP41">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(640,247)" gui_id="MP30">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(680,200)" gui_id="MP12">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+
+  <g class="mpinduct" mpinduct_id="0" transform="translate(740,110)" gui_id="MP35">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(740,290)" gui_id="MP27">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(850,153)" gui_id="MP38">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(900,247)" gui_id="MP33">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(930,153)" gui_id="MP50">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(960,200)" gui_id="MP17">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(990,247)" gui_id="MP53">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1020,153)" gui_id="MP18">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1073,247)" gui_id="MP19">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1120,200)" gui_id="MP20">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1170,153)" gui_id="MP21">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1222,247)" gui_id="MP22">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1260,153)" gui_id="MP56">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1290,200)" gui_id="MP23">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1310,247)" gui_id="MP59">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1350,153)" gui_id="MP24">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1415,200)" gui_id="MP60">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
+      <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+  </g>
+  <g class="mpinduct" mpinduct_id="0" transform="translate(1403,247)" gui_id="MP25">
+    <rect class="state" x="0" y="0" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="0">
+      <text class="mpinduct_name" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
+    </svg>
+    <rect class="error" x="0" y="23" width="60" height="23" style="stroke:black;fill:#ffffff" />
+    <svg width="60" height="23" x="0" y="23">
       <text class="npinduct_count" x="50%" y="50%" font-size="10" font-weight="500" alignment-baseline="middle" text-anchor="middle"></text>
     </svg>
   </g>
