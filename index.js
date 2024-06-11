@@ -328,6 +328,9 @@ function processReceivedJsonObjects(jsonObject) {
     else if(request=='getLoginUser'){
         if(jsonObject['data']['status']){
             let currentUser=jsonObject['data']['user'];
+            if(currentUser['role']>0 && currentUser['role']<3){
+                mainWindow.closable=true;
+            }
             basic_info['currentUser']=currentUser;
             menu = Menu.buildFromTemplate(getMenu());
             Menu.setApplicationMenu(menu);
