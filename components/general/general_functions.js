@@ -94,6 +94,15 @@ function setMpInductsLabel(){
         });
     }
 }
+function setOutputsLabel(){
+    for(let key in basic_info['boards_io']){
+        let board_io=basic_info['boards_io'][key];
+        if(board_io['output_id']>0){
+            $('.output[output_id="'+board_io["output_id"]+'"] .output_name').text(board_io['description'])
+        }
+    }
+
+}
 function setMotorDetailsView(){
 
     if(machine_mode!=1){
@@ -450,4 +459,41 @@ function setMpInductsStates(data){
         }
         $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .error').css('fill',error_color);
     }
+}
+function setOutputsStates(data){
+    let machine_id=basic_info['selectedMachineId'];
+    let outputs_states=data['outputs_states']
+    for(let key in outputs_states){
+        let output_state=outputs_states[key];
+        $('.output[output_id="'+output_state["output_id"]+'"] .state').css('fill',(output_state['state']==1)?'#4fe21f':'#9e9e9e');
+
+    }
+
+    console.log(outputs_states)
+
+    // for(let key in mpinducts_states){
+    //     let mpinduct_state=mpinducts_states[key];
+    //     $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .npinduct_count').text(mpinduct_state['count'])
+    //     if(mpinduct_states_labels[mpinduct_state['state']]){
+    //         $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .state').css('fill',mpinduct_states_labels[mpinduct_state['state']]['color']);
+    //     }
+    //     else{
+    //         $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .state').css('fill','#000000');
+    //     }
+    //     let error_color='#ffffff';
+    //     let error_ordering=-1;
+    //
+    //     for(let i=0;i<16;i++){
+    //         let column='b'+i;
+    //         if(mpinduct_state[column]==1){
+    //             if(mpinduct_errors_labels[column]){
+    //                 if(mpinduct_errors_labels[column]['ordering']>=error_ordering){
+    //                     error_ordering=mpinduct_errors_labels[column]['ordering'];
+    //                     error_color=mpinduct_errors_labels[column]['color'];
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     $('.mpinduct[mpinduct_id="'+mpinduct_state["mpinduct_id"]+'"] .error').css('fill',error_color);
+    // }
 }
